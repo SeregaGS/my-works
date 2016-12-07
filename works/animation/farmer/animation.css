@@ -63,6 +63,7 @@ div	{
 	animation-delay: 12s;
 	opacity: 0;
 	z-index: 16;
+	filter: blur(6px);
 }
 @keyframes nlohover {
 	0% {border-bottom: 0vh solid rgba(237, 238, 179, 0.5); opacity: 0;}
