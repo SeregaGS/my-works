@@ -193,7 +193,7 @@ div	{
 	z-index: 45;
 	border-radius: 50%;
 	animation-name: glazone;
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-delay: 0s;
 }
 .fermer .oko-1 .glaz-1::before {
@@ -206,6 +206,9 @@ div	{
 	background-color: #fff;
 	z-index: 45;
 	border-radius: 50%;
+	animation-name: glaztwobf;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
 }
 .fermer .oko-1 .glaz-2 {
 	position: absolute;
@@ -217,7 +220,7 @@ div	{
 	z-index: 45;
 	border-radius: 50%;
 	animation-name: glaztwo;
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-delay: 0s;
 }
 .fermer .oko-1 .glaz-2::before {
@@ -230,15 +233,35 @@ div	{
 	background-color: #fff;
 	z-index: 45;
 	border-radius: 50%;
+	animation-name: glaztwobf;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+}
+@keyframes glaztwobf {
+	0%   {width: 4px; height: 8px;}
+	50%  {width: 1px; height: 1px;}
+	100% {width: 4px; height: 8px;}
 }
 
 @keyframes glazone {
-	0%   {left: 155px;}
-	50%  {left: 150px;}
-	100% {left: 155px;}
+	0%   {left: 155px; top: 138px;}
+	10%  {left: 150px; top: 140px;}
+	20%  {left: 155px; top: 138px;}
+	30%  {left: 155px; top: 138px;}
+	40%  {left: 160px; top: 140px;}
+	50%  {left: 160px; top: 140px; width: 13px;	height: 27px; margin-top: 0px;}
+	60%  {left: 160px; top: 140px; width: 13px;	height: 4px; margin-top: 13px;}
+	70%  {left: 160px; top: 140px; width: 13px;	height: 27px; margin-top: 0px;}
+	80%  {left: 155px; top: 138px;}
 }
 @keyframes glaztwo {
-	0%   {left: 125px;;}
-	50%  {left: 120px;}
-	100% {left: 125px;}
+	0%   {left: 125px; top: 140px;}
+	10%  {left: 120px; top: 142px;}
+	20%  {left: 125px; top: 140px;}
+	30%  {left: 125px; top: 140px;}
+	40%  {left: 130px; top: 142px;}
+	50%  {left: 130px; top: 142px; width: 13px;	height: 27px; margin-top: 0px;}
+	60%  {left: 130px; top: 142px; width: 13px;	height: 4px; margin-top: 13px;}
+	70%  {left: 130px; top: 142px; width: 13px;	height: 27px; margin-top: 0px;}
+	80%  {left: 125px; top: 140px;}
 }
