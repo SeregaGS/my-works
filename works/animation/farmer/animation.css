@@ -164,7 +164,6 @@ div	{
 	100% {right: 30%; bottom: 62vh; margin-right: -40px; margin-bottom: 0vh; transform: rotate(0deg); opacity: 0}
 }
 
-
 .fermer {
 	width: 100%;
 	position: absolute;
@@ -238,9 +237,9 @@ div	{
 	animation-delay: 2.5s;
 }
 @keyframes glaztwobf {
-	0%   {width: 4px; height: 8px;}
-	50%  {width: 1px; height: 1px;}
-	100% {width: 4px; height: 8px;}
+	0%   {width: 4px; height: 8px; margin-top: 8px;}
+	50%  {width: 0px; height: 0px; margin-top: 2px;}
+	100% {width: 4px; height: 8px; margin-top: 8px;}
 }
 
 @keyframes glazone {
