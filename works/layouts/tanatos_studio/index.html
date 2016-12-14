@@ -11,56 +11,67 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
 </head>
 <body>
 	<!-- HEADER -->
-	<header>
-		<div class="header-bg">
-			<div class="bg-opc">
+	<header class="headerBg">
+		<div class="bgOpacity">
 				<div class="container">
-					<div class="row header-pad">
-						<div class="col-xs-6">
-							<a href="" title="">
-								<img src="img/logo.png" alt="">
-							</a>
-						</div>
-						<div class="col-xs-6">
-							<div class="button">
-								<span class="burger-name">Menu</span>
-								<div class="burger">
-								</div>
-							</div>			
-						</div>
+					<div class="row">
+            <div class="headerTopPad">
+  						<div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="logo">
+    							<a href="" title="">
+    								<img src="img/logo.png" alt="">
+    							</a>
+                </div>
+  						</div>
+  						<div class="col-lg-6 col-md-6 col-sm-6">
+  							<div class="buttonBurger">
+  								<span class="burger-name">Menu</span>
+  								<div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+  								</div>
+  							</div>
+  						</div>
+            </div>
 					</div>
-					<div class="row header-descr">
+					<div class="row">
 						<div class="col-md-12">
-							<h1>We Design <span>THINGS</span></h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="headerDecription">
+  							<h1>We Design <span>THINGS</span></h1>
+  							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              </div>
 						</div>
-						<div class="col-md-12 button-row">
-							<a class="buttonS" href="">HIRE US</a>
-							<a class="buttonS" href="">OUR WORKS</a>
-						</div>
-						<div class="col-md-12 arrow-wrap">
-							<a class="arrow" href="">
-								<img src="img/button-arrow.png" alt="">
-							</a>
-						</div>
+            <div class="col-md-12">
+              <div class="buttonTop">
+                <a class="button" href="">HIRE US</a>
+                <a class="button" href="">OUR WORKS</a>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="arroWrap">
+                <a href="">
+                  <img src="img/button-arrow.png" alt="">
+                </a>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<nav>
+		<!-- <nav>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="button-close">
-							
+
 						</div>
 					</div>
 				</div>
@@ -72,17 +83,16 @@
 				<li><a href="">Our works</a></li>
 				<li><a href="">Contact</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 	</header>
-	<!-- / HEADER -->
 	<!-- SECTION ITEM -->
-	<section>
+  <section class="we-work">
 		<div class="container">
-			<div class="row item-wrapp">
+			<div class="row">
 				<div class="col-md-3 col-sm-6">
 					<div class="items">
 						<div class="item-img">
-							<img src="img/item-print.png" alt="">
+							<img src="img/items/item-print.png" alt="">
 						</div>
 						<h2>PRINT DESIGN</h2>
 						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
@@ -91,7 +101,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="items">
 						<div class="item-img">
-							<img src="img/item-monitor.png" alt="">
+							<img src="img/items/item-monitor.png" alt="">
 						</div>
 						<h2>WEB Design</h2>
 						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
@@ -100,7 +110,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="items">
 						<div class="item-img">
-							<img src="img/item-telephone.png" alt="">
+							<img src="img/items/item-telephone.png" alt="">
 						</div>
 						<h2>app DESIGN</h2>
 						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
@@ -109,7 +119,7 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="items">
 						<div class="item-img">
-							<img src="img/item-items.png" alt="">
+							<img src="img/items/item-items.png" alt="">
 						</div>
 						<h2>logo DESIGN</h2>
 						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
@@ -118,80 +128,221 @@
 			</div>
 		</div>
 	</section>
-	<!-- / SECTION ITEM -->
 	<!-- SECTION SUBSCRIBE -->
 	<div class="subscibes-wrap">
-		<div class="bg-opc">
+		<div class="bgOpacity">
 			<div class="container">
-				<form method="GET">
+				<form class="subscribes" method="GET">
 					<input type="email" placeholder="Enter Your email adress for newsletter" required>
 					<input class="buttonS" type="submit" value="SUBSCRIBE">
 				</form>
 			</div>
 		</div>
 	</div>
-	<!-- / SECTION SUBSCRIBE -->
 	<!-- SECTION WORKS -->
 	<section class="works">
 		<div class="container">
-			<div class="row works-header">
-				<div class="col-md-12">
-					<h2>OUR <span>WORKS</span></h2>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>	
-				</div>
+			<div class="row">
+        <div class="works-header">
+  				<div class="col-md-12">
+  					<h2>OUR <span>WORKS</span></h2>
+  					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+  				</div>
+        </div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works1.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+  					<img src="img/works/items-works1.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works2.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+					  <img src="img/works/items-works2.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works3.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+  					<img src="img/works/items-works3.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works4.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+  					<img src="img/works/items-works4.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works5.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+  					<img src="img/works/items-works5.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12 wrap-item-work">
-					<div class="decrib">
-						<h3>ABAZOO WEBSITE</h3>
-						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-						<a class="buttonS" href="" title="">Show project</a>
-					</div>
-					<img src="img/items-works6.png" alt="">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="wrap-item-work">
+  					<img src="img/works/items-works6.png" alt="">
+            <div class="decribtion">
+  						<h3>ABAZOO WEBSITE</h3>
+  						<p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+  						<a class="button" href="" title="">Show project</a>
+  					</div>
+          </div>
 				</div>
+        <div class="buttons">
+          <a class="button" href="">SHOW MORE</a>
+        </div>
 			</div>
 		</div>
 	</section>
-	<!-- / SECTION WORKS -->
+  <!-- SECTION SLIDER COMMENTS -->
+  <section class="comments">
+    <div class="bgOpacity">
+      <div class="carouse">
+        <div class="wrap-item-comments">
+          <div class="item-img">
+            <img src="img/teams/person-review.png" alt="">
+          </div>
+          <div class="wrap-blockquote">
+            <blockquote>
+              These guys are incredible! I get my project in 10 days and it was awesome!Very good service! Highly recommended!
+            </blockquote>
+            <span class="author">John Smith</span>
+          </div>
+        </div>
+        <div class="wrap-item-comments">
+          <div class="item-img">
+                  <img src="img/teams/person-review.png" alt="">
+                </div>
+          <div class="wrap-blockquote">
+            <blockquote>
+              These guys are incredible! I get my project in 10 days and it was awesome!Very good service! Highly recommended!
+            </blockquote>
+            <span class="author">John Smith</span>
+          </div>
+        </div>
+        <div class="wrap-item-comments">
+          <div class="item-img">
+            <img src="img/teams/person-review.png" alt="">
+          </div>
+          <div class="wrap-blockquote">
+            <blockquote>
+              These guys are incredible! I get my project in 10 days and it was awesome!Very good service! Highly recommended!
+            </blockquote>
+            <span class="author">John Smith</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION TEAM -->
+  <section class="teams">
+    <div class="container">
+			<div class="row">
+        <div class="teams-header">
+  				<div class="col-md-12">
+  					<h2>Our <span>TEAM</span></h2>
+  					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem</p>
+  				</div>
+        </div>
+			</div>
+			<div class="row">
+        <div class="col-md-3">
+          <div class="wrap-items-team">
+            <div class="items-img">
+              <img src="img/teams/persone-works-1.png" alt="">
+              <span></span>
+            </div>
+            <div class="description">
+              <h3>Catherina Gail</h3>
+              <div class="social">
+                <a href=""><img src="img/socialIcon-f.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-t.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-gplus.png" alt=""></a>
+              </div>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wrap-items-team">
+            <div class="items-img">
+              <img src="img/teams/persone-works-2.png" alt="">
+              <span></span>
+            </div>
+            <div class="description">
+              <h3>Harvey Rube</h3>
+              <div class="social">
+                <a href=""><img src="img/socialIcon-f.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-t.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-gplus.png" alt=""></a>
+              </div>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wrap-items-team">
+            <div class="items-img">
+              <img src="img/teams/persone-works-3.png" alt="">
+              <span></span>
+            </div>
+            <div class="description">
+              <h3>Janet Pris</h3>
+              <div class="social">
+                <a href=""><img src="img/socialIcon-f.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-t.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-gplus.png" alt=""></a>
+              </div>
+              <p>Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="wrap-items-team">
+            <div class="items-img">
+              <img src="img/teams/persone-works-4.png" alt="">
+              <span></span>
+            </div>
+            <div class="description">
+              <h3>Kevin Ward</h3>
+              <div class="social">
+                <a href=""><img src="img/socialIcon-f.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-t.png" alt=""></a>
+                <a href=""><img src="img/socialIcon-gplus.png" alt=""></a>
+              </div>
+              <p>Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+            </div>
+          </div>
+        </div>
+
+			</div>
+		</div>
+  </section>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
