@@ -3,7 +3,7 @@
 body {
   font-size: 1rem;
   line-height: normal;
-  min-width: 320px;
+  min-width: 20rem;
   overflow-x: hidden;
   color: #ffffff; }
 
@@ -23,6 +23,11 @@ blockquote {
   margin: 0;
   font-size: 1.3rem;
   font-family: "OpenSans-itelic"; }
+
+input, textarea, button {
+  border: none; }
+  input:focus, textarea:focus, button:focus {
+    outline: none; }
 
 /* 2. Типографика */
 h1 {
@@ -81,7 +86,7 @@ a {
   display: inline-block;
   margin-right: 0;
   position: absolute;
-  right: 45px; }
+  right: 2.813rem; }
 
 .burger {
   float: right;
@@ -92,8 +97,8 @@ a {
   position: relative; }
   .burger div {
     min-width: 100%;
-    min-height: 2px;
-    margin-bottom: 7px;
+    min-height: 0.125rem;
+    margin-bottom: 0.4375rem;
     background-color: #ffffff; }
 
 .headerDecription {
@@ -106,7 +111,7 @@ a {
     max-width: 30.400em;
     width: 100%;
     font-size: 1.563rem;
-    line-height: 40px;
+    line-height: 2.5rem;
     color: #ffffff; }
 
 .buttonTop {
@@ -114,14 +119,14 @@ a {
   margin: 3.125rem 0 6.25rem 0; }
 
 .button {
-  margin: 0 14px;
+  margin: 0 0.875rem;
   text-transform: uppercase;
-  width: 210px;
+  width: 13.13rem;
   display: inline-block;
-  border: 1px solid #65696e;
-  line-height: 48px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  border: 0.0625rem solid #65696e;
+  line-height: 3rem;
+  -webkit-border-radius: 0.375rem;
+  border-radius: 0.375rem;
   -webkit-transition: all .2s linear;
   transition: all .2s linear; }
   .button:hover {
@@ -168,24 +173,21 @@ a {
   .subscribes input[type="email"] {
     max-width: 35rem;
     width: 100%;
-    border: none;
     padding: 0 1.563rem;
     height: 3.125rem;
     -webkit-border-radius: 0.5625rem;
     border-radius: 0.5625rem; }
-  .subscribes input:focus {
-    outline: none; }
 
 .buttonS {
   border: none;
   background-color: #f7600e;
   color: #ffffff;
-  line-height: 50px;
-  padding: 0 49px;
-  -webkit-border-radius: 9px;
-  border-radius: 9px;
-  width: 270px;
-  margin: 24px; }
+  line-height: 3.125rem;
+  padding: 0 3.063rem;
+  -webkit-border-radius: 0.5625rem;
+  border-radius: 0.5625rem;
+  width: 16.88rem;
+  margin: 1.5rem; }
 
 /* 6. items works */
 .works {
@@ -201,13 +203,13 @@ a {
       color: #ffffff;
       border-color: #f7600e; }
 
-.works-header, .teams-header {
+.works-header, .teams-header, .message-header {
   display: inline-block;
   width: 100%;
   margin-bottom: 3.125rem; }
-  .works-header span, .teams-header span {
+  .works-header span, .teams-header span, .message-header span {
     color: #f7600e; }
-  .works-header p, .teams-header p {
+  .works-header p, .teams-header p, .message-header p {
     max-width: 31.25rem;
     width: 100%;
     margin: 1.25rem auto 0 auto;
@@ -262,8 +264,8 @@ a {
   padding: 6.25rem 0;
   text-align: center; }
   .wrap-item-comments .item-img {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     margin: 0 auto;
@@ -271,17 +273,17 @@ a {
     position: relative; }
     .wrap-item-comments .item-img img {
       position: absolute;
-      left: -4px; }
+      left: -0.25rem; }
 
 .wrap-blockquote {
-  padding-top: 50px;
-  max-width: 800px;
+  padding-top: 3.125rem;
+  max-width: 50rem;
   width: 100%;
   margin: 0 auto; }
   .wrap-blockquote blockquote {
-    line-height: 38px; }
+    line-height: 2.375rem; }
   .wrap-blockquote .author {
-    margin: 20px 0 0 0;
+    margin: 1.25rem 0 0 0;
     display: block;
     font-family: "OpenSans-Semibold";
     font-size: 1.1em; }
@@ -294,22 +296,22 @@ a {
   left: 0; }
 
 .owl-buttons .owl-prev, .owl-buttons .owl-next {
-  width: 21px;
-  height: 40px;
+  width: 1.313rem;
+  height: 2.5rem;
   position: absolute;
   top: 50%; }
 
 .owl-buttons .owl-prev {
   background-image: url(../img/btn-left-slide.png);
   left: 0;
-  margin-top: -20px;
-  margin-left: 100px; }
+  margin-top: -1.25rem;
+  margin-left: 6.25rem; }
 
 .owl-buttons .owl-next {
   background-image: url(../img/btn-right-slide.png);
   right: 0;
-  margin-top: -20px;
-  margin-right: 100px; }
+  margin-top: -1.25rem;
+  margin-right: 6.25rem; }
 
 /* 8. Item teams */
 .teams {
@@ -336,32 +338,32 @@ a {
       -ms-transform: scale(1.1);
       transform: scale(1.1); }
     .wrap-items-team:hover .items-img span {
-      width: 250px;
+      width: 15.63rem;
       left: 0; }
   .wrap-items-team .items-img {
     width: 100%;
-    height: 310px;
+    height: 19.38rem;
     overflow: hidden;
     position: relative; }
     .wrap-items-team .items-img img {
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
-      width: 235px;
-      height: 258px;
+      -webkit-border-radius: 0.375rem;
+      border-radius: 0.375rem;
+      width: 14.69rem;
+      height: 16.13rem;
       position: absolute;
       bottom: 0;
       left: 50%;
-      margin-left: -117px;
+      margin-left: -7.313rem;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
     .wrap-items-team .items-img span {
-      -webkit-border-radius: 4px;
-      border-radius: 4px;
+      -webkit-border-radius: 0.25rem;
+      border-radius: 0.25rem;
       position: absolute;
       bottom: 0;
       left: 50%;
-      width: 0px;
-      height: 5px;
+      width: 0;
+      height: 0.3125rem;
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
       transform: scale(1.1);
@@ -369,21 +371,95 @@ a {
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease; }
   .wrap-items-team .description {
-    margin: 15px 0 0 0; }
+    margin: 0.9375rem 0 0 0; }
     .wrap-items-team .description h3 {
       font-size: 1.563rem;
       text-transform: uppercase;
       color: #3b434c;
-      margin-bottom: 15px; }
+      margin-bottom: 0.9375rem; }
     .wrap-items-team .description a {
       display: inline-block;
-      width: 24px;
-      margin-right: 7px;
+      width: 1.5rem;
+      margin-right: 0.4375rem;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease; }
       .wrap-items-team .description a img {
         max-width: 100%; }
     .wrap-items-team .description p {
       font-size: 0.875rem;
-      line-height: 24px;
-      margin: 15px 0 40px 0; }
+      line-height: 1.5rem;
+      margin: 0.9375rem 0 2.5rem 0; }
+
+/* 9. message */
+.message {
+  background-image: url("../img/bg-header4.jpg");
+  background-size: cover;
+  background-position: 70% 0; }
+  .message .social {
+    float: right;
+    margin: 0 0.9375rem; }
+    .message .social a {
+      margin: 0.3125rem;
+      width: 2.25rem;
+      display: inline-block; }
+      .message .social a img {
+        max-width: 100%; }
+
+.wrap-message {
+  padding: 6.25rem 0; }
+
+.message-header {
+  text-align: center; }
+  .message-header h2 {
+    color: #ffffff; }
+  .message-header p {
+    color: #ffffff; }
+
+.forms {
+  max-width: 54.06rem;
+  width: 100%;
+  margin: 0 auto; }
+  .forms input {
+    width: 25rem;
+    margin: 0 0.9375rem;
+    -webkit-border-radius: 0.5625rem;
+    border-radius: 0.5625rem;
+    line-height: 3rem;
+    padding: 0 1.25rem; }
+  .forms textarea {
+    text-align: left;
+    margin: 1.875rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
+    max-width: 52.13rem;
+    width: 100%;
+    display: block;
+    -webkit-border-radius: 0.5625rem;
+    border-radius: 0.5625rem;
+    resize: none;
+    height: 12.5rem; }
+
+.button-message {
+  float: left; }
+  .button-message .buttonS {
+    margin: 0 0.9375rem;
+    width: 13.13rem; }
+
+/* 10. footer */
+footer {
+  background-color: #3b434c;
+  padding: 2.813rem 0; }
+
+.copy {
+  float: left;
+  text-transform: uppercase; }
+  .copy span {
+    font-size: 1rem; }
+
+.url {
+  float: right;
+  text-transform: uppercase; }
+  .url a {
+    font-size: 0.95rem;
+    font-family: "OpenSans-Semibold"; }
+    .url a span {
+      color: #d32640; }
