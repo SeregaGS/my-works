@@ -1,7 +1,11 @@
 /* 1199px */
 @media screen and (max-width: 74.94rem) {
   .items p {
-    padding: 0 0.5rem; } }
+    padding: 0 0.5rem; }
+  .owl-buttons .owl-next {
+    margin-top: -3.25rem; }
+  .owl-buttons .owl-prev {
+    margin-top: -3.25rem; } }
 
 /* 991px */
 @media screen and (max-width: 61.94rem) {
@@ -18,7 +22,17 @@
   .subscribes input[type="email"] {
     max-width: 23rem; }
   .subscribes .buttonS {
-    width: 12.88rem; } }
+    width: 12.88rem; }
+  .owl-buttons .owl-next {
+    margin-top: -3.4rem; }
+  .owl-buttons .owl-prev {
+    margin-top: -3.4rem; }
+  .wrap-blockquote {
+    max-width: 40rem;
+    padding-top: 2rem; }
+    .wrap-blockquote blockquote {
+      font-size: 1.2rem;
+      line-height: 2rem; } }
 
 /* 767px*/
 @media screen and (max-width: 47.94rem) {
@@ -53,7 +67,16 @@
     line-height: 1.6rem;
     max-width: 100%; }
   .works .buttons {
-    margin: 3.5rem 0 0 0; } }
+    margin: 3.5rem 0 0 0; }
+  .wrap-blockquote {
+    padding: 3.125rem 15px 0 15px;
+    max-width: 100%; }
+  .owl-buttons .owl-next {
+    margin-top: -7rem;
+    margin-right: 1.25rem; }
+  .owl-buttons .owl-prev {
+    margin-top: -7rem;
+    margin-left: 1.25rem; } }
 
 /* 575px */
 @media screen and (max-width: 35.94rem) {
@@ -67,10 +90,14 @@
     width: 50%; }
   .we-work {
     padding: 5rem 0 2rem 0; }
-  .works {
+  .works, .wrap-item-comments {
     padding: 5rem 0; }
-    .works .buttons {
-      margin: 2.5rem 0 0 0; } }
+  .works .buttons {
+    margin: 2.5rem 0 0 0; }
+  .owl-buttons .owl-next {
+    margin-top: -6.5rem; }
+  .owl-buttons .owl-prev {
+    margin-top: -6.5rem; } }
 
 @media screen and (max-width: 31.88rem) {
   .headerBg .buttonTop {
@@ -110,15 +137,26 @@
       height: 40px; }
   .we-work {
     padding: 4rem 0 1rem 0; }
-  .works {
+  .works, .wrap-item-comments {
     padding: 4rem 0; }
-    .works .buttons {
-      margin: 1.5rem 0 0 0; }
+  .works .buttons {
+    margin: 1.5rem 0 0 0; }
   .works-header h2 {
     font-size: 1.8rem; }
   .works-header p {
     font-size: 0.9em;
-    line-height: 1.6rem; } }
+    line-height: 1.6rem; }
+  .owl-buttons .owl-next {
+    margin-top: -5rem; }
+  .owl-buttons .owl-prev {
+    margin-top: -5rem; }
+  .wrap-blockquote {
+    padding-top: 1rem; }
+    .wrap-blockquote blockquote {
+      font-size: 1rem;
+      line-height: 1.5rem; }
+    .wrap-blockquote .author {
+      font-size: 1rem; } }
 
 /* 371px*/
 @media screen and (max-width: 23.19rem) {
@@ -142,4 +180,6 @@
     font-size: 0.9rem; }
   .items p {
     font-size: 0.7rem;
-    line-height: 1.2rem; } }
+    line-height: 1.2rem; }
+  .owl-buttons {
+    display: none; } }
