@@ -44,6 +44,7 @@
     padding: 0;
     margin: 0.7rem; } }
 
+/* 575px */
 @media screen and (max-width: 35.94rem) {
   .headerBg {
     background-position: center right; }
@@ -52,7 +53,9 @@
   .subscribes input[type="email"] {
     max-width: 100%; }
   .subscribes .buttonS {
-    width: 50%; } }
+    width: 50%; }
+  .we-work {
+    padding: 5rem 0 2rem 0; } }
 
 @media screen and (max-width: 31.88rem) {
   .headerBg .buttonTop {
@@ -62,6 +65,7 @@
     font-size: 0.9em;
     width: 12.13rem; } }
 
+/* 478px */
 @media screen and (max-width: 29.88rem) {
   .headerDecription {
     margin: 1.6rem 0 0 0; }
@@ -88,7 +92,9 @@
     height: 7.375rem;
     padding: 2.5rem 0 0 0; }
     .items .item-img img {
-      height: 40px; } }
+      height: 40px; }
+  .we-work {
+    padding: 4rem 0 1rem 0; } }
 
 /* 371px*/
 @media screen and (max-width: 23.19rem) {
