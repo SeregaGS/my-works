@@ -1,3 +1,26 @@
+/* 1199px */
+@media screen and (max-width: 74.94rem) {
+  .items p {
+    padding: 0 0.5rem; } }
+
+/* 991px */
+@media screen and (max-width: 61.94rem) {
+  .items .item-img {
+    width: 8.375rem;
+    height: 8.375rem;
+    padding: 2.5rem 0 0 0;
+    margin-bottom: 1rem; }
+  .items h2 {
+    margin-bottom: 1rem; }
+  .items p {
+    font-size: 0.79rem;
+    line-height: 1.35rem; }
+  .subscribes input[type="email"] {
+    max-width: 23rem; }
+  .subscribes .buttonS {
+    width: 12.88rem; } }
+
+/* 767px*/
 @media screen and (max-width: 47.94rem) {
   .headerDecription {
     margin: 2.6rem 0 0 0; }
@@ -9,13 +32,27 @@
   .buttonTop {
     margin: 3.125rem 0 4.25rem 0; }
   .navigation ul {
-    padding: 4rem 0 2rem 0; } }
+    padding: 4rem 0 2rem 0; }
+  .we-work {
+    padding-bottom: 3.25rem; }
+  .items {
+    margin-bottom: 3rem; }
+  .subscribes input[type="email"] {
+    max-width: 19rem; }
+  .subscribes .buttonS {
+    width: 9.88rem;
+    padding: 0;
+    margin: 0.7rem; } }
 
 @media screen and (max-width: 35.94rem) {
   .headerBg {
     background-position: center right; }
   .closed {
-    right: 0.95rem; } }
+    right: 0.95rem; }
+  .subscribes input[type="email"] {
+    max-width: 100%; }
+  .subscribes .buttonS {
+    width: 50%; } }
 
 @media screen and (max-width: 31.88rem) {
   .headerBg .buttonTop {
@@ -33,9 +70,7 @@
     .headerDecription p {
       font-size: 0.9em;
       line-height: 1.6rem; }
-  .headerBg {
-    height: 100vh; }
-    .headerBg .button {
+    .headerDecription .button {
       margin: 0 0.2rem;
       font-size: 0.9em;
       width: 10.13rem; }
@@ -47,8 +82,15 @@
     .navigation .social a {
       width: 30px; }
     .navigation .social img {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .items .item-img {
+    width: 7.375rem;
+    height: 7.375rem;
+    padding: 2.5rem 0 0 0; }
+    .items .item-img img {
+      height: 40px; } }
 
+/* 371px*/
 @media screen and (max-width: 23.19rem) {
   .headerDecription {
     margin: 1.6rem 0 0 0; }
@@ -60,4 +102,14 @@
   .headerBg .button {
     margin: 0 0.2rem;
     font-size: 0.9em;
-    width: 8.13rem; } }
+    width: 8.13rem; }
+  .subscribes input[type="email"] {
+    max-width: 100%; }
+  .subscribes .buttonS {
+    width: 100%;
+    margin: 0.7rem 0; }
+  .items h2 {
+    font-size: 0.9rem; }
+  .items p {
+    font-size: 0.7rem;
+    line-height: 1.2rem; } }
