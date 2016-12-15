@@ -39,7 +39,12 @@
     blockquote
       font-size: 1.2rem
       line-height: 2rem
-
+  .wrap-items-team
+    &:hover
+      .items-img
+        span
+          width: 14.8rem
+          left: 2.95rem
 /* 767px*/
 @media screen and (max-width: 47.94rem)
   .headerDecription
@@ -70,7 +75,7 @@
     margin-right: auto
     img
       height: auto
-  .works-header
+  .works-header, .teams-header
     p
       font-size: 1.1rem
       line-height: 1.6rem
@@ -88,7 +93,19 @@
     .owl-prev
       margin-top: -7rem
       margin-left: 1.25rem
-
+  .wrap-items-team
+    filter: grayscale(0)
+    &:hover
+      .items-img
+        img
+          transform: none
+        span
+          width: normal
+          left: 0
+    .items-img
+      span
+        width: 14.8rem
+        left: 0rem
 /* 575px */
 @media screen and (max-width: 35.94rem)
   .headerBg
@@ -102,19 +119,20 @@
       width: 50%
   .we-work
     padding: 5rem 0 2rem 0
-  .works, .wrap-item-comments
+  .works, .wrap-item-comments, .teams
     padding: 5rem 0
   .works
     .buttons
       margin: 2.5rem 0 0 0
-  .works-header
-    p
   .owl-buttons
     .owl-next
       margin-top: -6.5rem
     .owl-prev
       margin-top: -6.5rem
-
+  .wrap-items-team
+    .items-img
+      span
+        display: none
 @media screen and (max-width: 31.88rem)
   .headerBg
     .buttonTop
@@ -155,12 +173,12 @@
         height: 40px
   .we-work
     padding: 4rem 0 1rem 0
-  .works, .wrap-item-comments
+  .works, .wrap-item-comments, .teams
     padding: 4rem 0
   .works
     .buttons
       margin: 1.5rem 0 0 0
-  .works-header
+  .works-header, .teams-header
     h2
       font-size: 1.8rem
     p

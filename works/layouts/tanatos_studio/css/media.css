@@ -32,7 +32,10 @@
     padding-top: 2rem; }
     .wrap-blockquote blockquote {
       font-size: 1.2rem;
-      line-height: 2rem; } }
+      line-height: 2rem; }
+  .wrap-items-team:hover .items-img span {
+    width: 14.8rem;
+    left: 2.95rem; } }
 
 /* 767px*/
 @media screen and (max-width: 47.94rem) {
@@ -62,7 +65,7 @@
     margin-right: auto; }
     .wrap-item-work img {
       height: auto; }
-  .works-header p {
+  .works-header p, .teams-header p {
     font-size: 1.1rem;
     line-height: 1.6rem;
     max-width: 100%; }
@@ -76,7 +79,20 @@
     margin-right: 1.25rem; }
   .owl-buttons .owl-prev {
     margin-top: -7rem;
-    margin-left: 1.25rem; } }
+    margin-left: 1.25rem; }
+  .wrap-items-team {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+    .wrap-items-team:hover .items-img img {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+    .wrap-items-team:hover .items-img span {
+      width: normal;
+      left: 0; }
+    .wrap-items-team .items-img span {
+      width: 14.8rem;
+      left: 0rem; } }
 
 /* 575px */
 @media screen and (max-width: 35.94rem) {
@@ -90,14 +106,16 @@
     width: 50%; }
   .we-work {
     padding: 5rem 0 2rem 0; }
-  .works, .wrap-item-comments {
+  .works, .wrap-item-comments, .teams {
     padding: 5rem 0; }
   .works .buttons {
     margin: 2.5rem 0 0 0; }
   .owl-buttons .owl-next {
     margin-top: -6.5rem; }
   .owl-buttons .owl-prev {
-    margin-top: -6.5rem; } }
+    margin-top: -6.5rem; }
+  .wrap-items-team .items-img span {
+    display: none; } }
 
 @media screen and (max-width: 31.88rem) {
   .headerBg .buttonTop {
@@ -137,13 +155,13 @@
       height: 40px; }
   .we-work {
     padding: 4rem 0 1rem 0; }
-  .works, .wrap-item-comments {
+  .works, .wrap-item-comments, .teams {
     padding: 4rem 0; }
   .works .buttons {
     margin: 1.5rem 0 0 0; }
-  .works-header h2 {
+  .works-header h2, .teams-header h2 {
     font-size: 1.8rem; }
-  .works-header p {
+  .works-header p, .teams-header p {
     font-size: 0.9em;
     line-height: 1.6rem; }
   .owl-buttons .owl-next {
