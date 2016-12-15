@@ -35,7 +35,9 @@
       line-height: 2rem; }
   .wrap-items-team:hover .items-img span {
     width: 14.8rem;
-    left: 2.95rem; } }
+    left: 2.95rem; }
+  .forms input {
+    width: 20rem; } }
 
 /* 767px*/
 @media screen and (max-width: 47.94rem) {
@@ -65,7 +67,7 @@
     margin-right: auto; }
     .wrap-item-work img {
       height: auto; }
-  .works-header p, .teams-header p {
+  .works-header p, .teams-header p, .message-header p {
     font-size: 1.1rem;
     line-height: 1.6rem;
     max-width: 100%; }
@@ -92,7 +94,15 @@
       left: 0; }
     .wrap-items-team .items-img span {
       width: 14.8rem;
-      left: 0rem; } }
+      left: 0rem; }
+  .forms textarea {
+    width: 91%;
+    max-width: auto; }
+  .forms input {
+    width: 91%;
+    margin-bottom: 1.875rem; }
+  .forms textarea {
+    margin-top: 0; } }
 
 /* 575px */
 @media screen and (max-width: 35.94rem) {
@@ -106,7 +116,7 @@
     width: 50%; }
   .we-work {
     padding: 5rem 0 2rem 0; }
-  .works, .wrap-item-comments, .teams {
+  .works, .wrap-item-comments, .teams, .wrap-message {
     padding: 5rem 0; }
   .works .buttons {
     margin: 2.5rem 0 0 0; }
@@ -115,7 +125,31 @@
   .owl-buttons .owl-prev {
     margin-top: -6.5rem; }
   .wrap-items-team .items-img span {
-    display: none; } }
+    display: none; }
+  .forms input {
+    margin-bottom: 1.5rem; }
+  .message .button-message {
+    float: none;
+    width: 91%; }
+    .message .button-message .buttonS {
+      width: 100%; }
+  .message .social {
+    margin-top: 1rem;
+    text-align: center;
+    float: none; }
+  .copy {
+    float: none;
+    text-align: center;
+    margin-bottom: 0.8rem; }
+    .copy span {
+      font-size: 0.8rem; }
+  .url {
+    float: none;
+    text-align: center; }
+    .url span {
+      font-size: 0.8rem; }
+  .wrap-items-team .description h3 {
+    font-size: 1.4rem; } }
 
 @media screen and (max-width: 31.88rem) {
   .headerBg .buttonTop {
@@ -155,13 +189,13 @@
       height: 40px; }
   .we-work {
     padding: 4rem 0 1rem 0; }
-  .works, .wrap-item-comments, .teams {
+  .works, .wrap-item-comments, .teams, .wrap-message {
     padding: 4rem 0; }
   .works .buttons {
     margin: 1.5rem 0 0 0; }
-  .works-header h2, .teams-header h2 {
+  .works-header h2, .teams-header h2, .message-header h2 {
     font-size: 1.8rem; }
-  .works-header p, .teams-header p {
+  .works-header p, .teams-header p, .message-header p {
     font-size: 0.9em;
     line-height: 1.6rem; }
   .owl-buttons .owl-next {
