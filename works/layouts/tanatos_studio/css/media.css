@@ -19,9 +19,11 @@
   .headerBg .buttonTop {
     margin-bottom: 3.125rem; }
   .headerBg .button {
-    margin-bottom: 1rem; } }
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+    width: 12.13rem; } }
 
-@media screen and (max-width: 21.25rem) {
+@media screen and (max-width: 29.88rem) {
   .headerDecription {
     margin: 1.6rem 0 0 0; }
     .headerDecription h1 {
@@ -30,6 +32,6 @@
       font-size: 0.9em;
       line-height: 1.6rem; }
   .headerBg .button {
-    margin: 0;
+    margin: 0 0.2rem;
     font-size: 0.9em;
-    width: 8.13rem; } }
+    width: 10.13rem; } }
