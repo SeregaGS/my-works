@@ -33,10 +33,12 @@
     .headerDecription p {
       font-size: 0.9em;
       line-height: 1.6rem; }
-  .headerBg .button {
-    margin: 0 0.2rem;
-    font-size: 0.9em;
-    width: 10.13rem; }
+  .headerBg {
+    height: 100vh; }
+    .headerBg .button {
+      margin: 0 0.2rem;
+      font-size: 0.9em;
+      width: 10.13rem; }
   .navigation li {
     font-size: 1.3rem;
     line-height: 3rem; }
