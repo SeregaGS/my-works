@@ -26,14 +26,9 @@ a {
   a:hover, a:active {
     color: #2eb398;
     text-decoration: none; }
-
-ul {
-  list-style-type: none;
-  margin: 0; }
-
-nav li {
-  display: inline-block;
-  font-size: 12px; }
+  a:focus {
+    color: #2eb398;
+    outline: none; }
 
 h1, h2, h3, p {
   margin: 0;
@@ -55,42 +50,14 @@ h3 {
 p {
   font-size: 0.9rem; }
 
-/* 1. Header */
-header {
-  background-color: #323232; }
-
-nav {
-  text-align: center; }
-  nav a {
-    margin: 32px 10px;
-    display: block;
-    position: relative; }
-    nav a::before {
-      content: "";
-      position: absolute;
-      right: -14px;
-      top: 9px;
-      width: 2px;
-      height: 2px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      background-color: #ffffff; }
-  nav li:last-child a::before {
-    width: 0;
-    height: 0; }
-
-/* 2. Brd*/
-.brd-wrap {
-  margin-top: 30px;
-  width: 100%; }
-
+/* Brd*/
 .brd {
   width: 100%;
   height: 1px;
-  background-color: #e4e9eb; }
+  background-color: #e4e9eb;
+  margin-top: 20px; }
 
-/* 3. Works-item*/
+/* Works-item*/
 .works {
   margin: 30px 0; }
 
@@ -158,7 +125,7 @@ nav {
 .descr {
   position: absolute;
   top: 0;
-  padding: 50px 0;
+  padding: 50px 5px;
   width: inherit;
   height: inherit;
   background-color: rgba(46, 179, 152, 0.9);
@@ -216,9 +183,8 @@ nav {
   background-color: #323232;
   opacity: 0.95; }
 
-/* 4. About me*/
+/* About me*/
 .about-me {
-  margin-top: 30px;
   background-color: #2eb398;
   padding: 65px 0; }
   .about-me .item-work::before, .about-me .item-work::after {
@@ -263,48 +229,25 @@ nav {
       font-size: 12px;
       color: #2eb398; }
 
-/* 5. Contact*/
-.contact {
+/* Footer */
+footer {
   background-color: #323232;
-  color: #ffffff;
-  padding: 60px 0; }
-  .contact h2 {
-    font-size: 30px;
-    margin-bottom: 5px; }
-  .contact p {
-    margin-bottom: 15px;
-    font-size: 13px; }
-
-.forms input {
+  position: absolute;
   width: 100%;
-  background-color: #454545;
-  border: none;
-  margin-bottom: 10px;
-  color: #ffffff;
-  line-height: 44px;
-  padding: 0 15px; }
-
-.forms input[placeholder], .forms textarea[placeholder] {
-  font-size: 12px; }
-
-.forms textarea {
-  width: 100%;
-  background-color: #454545;
-  border: none;
-  color: #ffffff;
-  resize: none;
-  margin-bottom: 10px;
-  height: 150px;
-  padding: 10px 15px; }
-
-.forms button {
-  float: right;
-  border: none;
-  background-color: #2eb398;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 13px;
-  font-family: "RobotoSlab-Bold";
-  line-height: 35px;
-  padding: 0 25px;
-  margin-top: -6px; }
+  text-align: center; }
+  footer .social {
+    display: inline-block;
+    float: none;
+    margin: 25px 0; }
+    footer .social a {
+      width: 35px;
+      height: 35px;
+      background-color: #444444;
+      margin: 0 3px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      padding-top: 6px; }
+      footer .social a i {
+        color: #ffffff;
+        font-size: 20px; }
