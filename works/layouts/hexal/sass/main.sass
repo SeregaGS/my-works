@@ -12,11 +12,28 @@ a
   &:focus
     color: $color-block
     outline: none
-h1, h2, h3, p
+h1, h2, h3, p, h4
   margin: 0
   padding: 0
+.button
+  color: $color-block-brd
+  border: 1px solid $color-block-brd
+  display: inline-block
+  padding: 0 20px
+  line-height: 29px
+  border-radius: 4px
+  transition: all .3s ease
+  font-size: 13px
+  &:hover
+    color: $color-link
+    background-color: $color-block-brd
+ul
+  list-style-type: none
+  list-style-image: url(../img/list.png)
+li
+  font-size: 12px
 /* Типографика */
-h1, h2, h3
+h1, h2, h3, h4
   font-family: "RobotoSlab-Bold"
 h1
   font-size: 50px
@@ -24,6 +41,8 @@ h2
   font-size: 40px
 h3
   font-size: 30px
+h4
+  font-size: 20px
 p
   font-size: 0.9rem
 /* Brd*/
@@ -135,6 +154,8 @@ p
   width: 400px
   vertical-align: top
   h3
+    margin-bottom: 10px
+  h4
     margin-bottom: 10px
   p
     font-size: 0.8rem
