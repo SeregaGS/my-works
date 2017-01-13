@@ -112,8 +112,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
-  height: 100vh; }
+  overflow: hidden; }
 
 .menu-wrapp-overlay {
   background-color: rgba(0, 0, 0, 0.65);
