@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "RobotoSlab-Thin";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.ttf"); }
+
+@font-face {
+  font-family: "RobotoSlab-Light";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Light.ttf"); }
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf"); }
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Semibold";
+  src: url("../fonts/Open_Sans/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("../fonts/Open_Sans/OpenSans-ExtraBold.ttf"); }
+
+/* 1. Основные CSS */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  min-width: 18.75rem; }
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: none; }
+
+nav {
+  font-family: "RobotoSlab-Bold"; }
+  nav ul {
+    list-style-type: none;
+    margin-bottom: 0; }
+    nav ul li {
+      display: inline-block; }
+
+/* 2. Типографика */
+a {
+  font-family: "RobotoSlab-Bold"; }
+
+/* 3. Переопределение */
+.container-fluid {
+  max-width: 95.63rem; }
+
+/* 4. Header */
+.header-top {
+  background-image: url(/img/bg/header-lg.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 54.38rem; }
+
+.menu-wrapp-overlay {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 2.188rem;
+  color: #ffffff; }
+
+.logo {
+  display: inline-block;
+  position: relative; }
+  .logo:hover .logo-name {
+    color: #f3c62c; }
+  .logo:hover .logo-name-letter {
+    color: #ffffff; }
+  .logo:hover .logo-img {
+    -webkit-transform: rotate(13800deg);
+    -moz-transform: rotate(13800deg);
+    -ms-transform: rotate(13800deg);
+    -o-transform: rotate(13800deg);
+    transform: rotate(13800deg); }
+
+.logo-img {
+  position: absolute;
+  width: 1.563rem;
+  left: -1.125rem;
+  top: -0.3125rem;
+  -webkit-transform: rotate(38deg);
+  -moz-transform: rotate(38deg);
+  -ms-transform: rotate(38deg);
+  -o-transform: rotate(38deg);
+  transform: rotate(38deg);
+  -webkit-transition: -webkit-transform 10s ease;
+  transition: -webkit-transform 10s ease;
+  -o-transition: -o-transform 10s ease;
+  -moz-transition: transform 10s ease, -moz-transform 10s ease;
+  transition: transform 10s ease;
+  transition: transform 10s ease, -webkit-transform 10s ease, -moz-transform 10s ease, -o-transform 10s ease; }
+
+.logo-name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
+
+.logo-name-letter {
+  color: #f3c62c;
+  -webkit-transition: color 0.4s ease;
+  -o-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  transition: color 0.4s ease; }
+
+.navigation-wrapp {
+  text-align: center; }
+
+.navigation-link {
+  display: block;
+  position: relative;
+  color: #ffffff;
+  line-height: 2.25rem;
+  padding: 0 0.9375rem;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+  .navigation-link:hover {
+    color: #e28800;
+    text-decoration: underline; }
+  .navigation-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.3125rem;
+    margin-top: -0.1875rem;
+    width: 0.443rem;
+    height: 0.443rem;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+.navigation:last-child .navigation-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.3125rem;
+  margin-top: -0.1875rem;
+  width: 0.443rem;
+  height: 0.443rem;
+  background-color: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.number {
+  float: right; }
+  .number .fa-phone-square {
+    font-size: 1.313rem;
+    margin-right: 0.625rem; }
+
+.number-link {
+  font-family: "OpenSans-Regular";
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  color: #ffffff; }
+  .number-link:hover {
+    color: #e28800; }
+
+.overlay-header-top {
+  background-color: rgba(0, 0, 0, 0.45);
+  height: inherit; }

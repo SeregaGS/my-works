@@ -1,0 +1,111 @@
+@import 'fonts'
+@import 'color'
+
+/* 1. Основные CSS */
+body
+  font-size: 1rem
+  line-height: 1.5
+  min-width: 18.75rem
+a
+  &:hover,
+  &:focus
+    text-decoration: none
+    outline: none
+nav
+  font-family: "RobotoSlab-Bold"
+  ul
+    list-style-type: none
+    margin-bottom: 0
+    li
+      display: inline-block
+/* 2. Типографика */
+a
+  font-family: "RobotoSlab-Bold"
+/* 3. Переопределение */
+.container-fluid
+  max-width: 95.63rem
+
+/* 4. Header */
+.header-top
+  background-image: url(/img/bg/header-lg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 54.38rem
+.menu-wrapp-overlay
+  background-color: $color-overlay-65
+  padding: 2.188rem
+  color: $color-text-white
+.logo
+  display: inline-block
+  position: relative
+  &:hover
+    .logo-name
+      color: $color-letter
+    .logo-name-letter
+      color: $color-text-white
+    .logo-img
+      transform: rotate(13800deg)
+.logo-img
+  position: absolute
+  width: 1.563rem
+  left: -1.125rem
+  top: -0.3125rem
+  transform: rotate(38deg)
+  transition: transform 10s ease
+.logo-name
+  color: $color-text-white
+  font-size: 1.5rem
+  transition: color 0.4s ease
+.logo-name-letter
+  color: $color-letter
+  transition: color 0.4s ease
+.navigation-wrapp
+  text-align: center
+.navigation-link
+  display: block
+  position: relative
+  color: $color-text-white
+  line-height: 2.25rem
+  padding: 0 0.9375rem
+  transition: color 0.3s ease
+  &:hover
+    color: $color-button
+    text-decoration: underline
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: -0.3125rem
+    margin-top: -0.1875rem
+    width: 0.443rem
+    height: 0.443rem
+    background-color: $color-text-white
+    transform: rotate(45deg)
+.navigation
+  &:last-child
+    .navigation-link
+      &::after
+        content: ""
+        position: absolute
+        top: 50%
+        right: -0.3125rem
+        margin-top: -0.1875rem
+        width: 0.443rem
+        height: 0.443rem
+        background-color: $color-text-white
+        transform: rotate(45deg)
+.number
+  float: right
+  .fa-phone-square
+    font-size: 1.313rem
+    margin-right: 0.625rem
+.number-link
+  font-family: "OpenSans-Regular"
+  font-size: 1.125rem
+  line-height: 2.25rem
+  color: $color-text-white
+  &:hover
+    color: $color-button
+.overlay-header-top
+  background-color: $color-overlay-45
+  height: inherit
