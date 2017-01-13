@@ -54,12 +54,56 @@ nav {
       display: inline-block; }
 
 /* 2. Типографика */
+h1 {
+  font-family: "RobotoSlab-Bold";
+  font-size: 3rem; }
+
+p {
+  font-family: "OpenSans-Regular";
+  font-size: 1.125rem;
+  line-height: 1.5rem; }
+
 a {
   font-family: "RobotoSlab-Bold"; }
 
 /* 3. Переопределение */
 .container-fluid {
   max-width: 95.63rem; }
+
+.owl-pagination {
+  width: 100%;
+  text-align: center; }
+  .owl-pagination .owl-page {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 0.1875rem solid #ffffff;
+    display: inline-block;
+    margin: 0 0.25rem; }
+  .owl-pagination .active {
+    background-color: #ffffff; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat; }
+
+.owl-prev {
+  left: 10%; }
+
+.owl-next {
+  right: 10%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 /* 4. Header */
 .header-top {
@@ -68,7 +112,8 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 54.38rem; }
+  overflow: hidden;
+  height: 100vh; }
 
 .menu-wrapp-overlay {
   background-color: rgba(0, 0, 0, 0.65);
@@ -177,10 +222,27 @@ a {
   font-family: "OpenSans-Regular";
   font-size: 1.125rem;
   line-height: 2.25rem;
-  color: #ffffff; }
+  color: #ffffff;
+  -webkit-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
   .number-link:hover {
     color: #e28800; }
 
 .overlay-header-top {
   background-color: rgba(0, 0, 0, 0.45);
-  height: inherit; }
+  height: inherit;
+  padding: 10rem 0 6rem 0; }
+
+/* 4.1 Banner */
+.carousel-item-img {
+  margin-left: 7.5rem;
+  max-width: 100%; }
+
+.carousel-item-description {
+  color: #ffffff;
+  padding: 3.75rem 0;
+  margin-right: 7.5rem; }
+  .carousel-item-description h1 {
+    margin-bottom: 1.25rem; }

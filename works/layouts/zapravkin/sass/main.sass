@@ -19,18 +19,50 @@ nav
     li
       display: inline-block
 /* 2. Типографика */
+h1
+  font-family: "RobotoSlab-Bold"
+  font-size: 3rem
+p
+  font-family: "OpenSans-Regular"
+  font-size: 1.125rem
+  line-height: 1.5rem
 a
   font-family: "RobotoSlab-Bold"
 /* 3. Переопределение */
 .container-fluid
   max-width: 95.63rem
-
+.owl-pagination
+  width: 100%
+  text-align: center
+  .owl-page
+    width: 0.9375rem
+    height: 0.9375rem
+    border-radius: 50%
+    border: 0.1875rem solid $color-text-white
+    display: inline-block
+    margin: 0 0.25rem
+  .active
+    background-color: $color-text-white
+.owl-prev, .owl-next
+  position: absolute
+  top: 50%
+  margin-top: -75px
+  width: 30px
+  height: 30px
+  background-image: url(../img/arrow.svg)
+  background-repeat: no-repeat
+.owl-prev
+  left: 10%
+.owl-next
+  right: 10%
+  transform: rotate(180deg)
 /* 4. Header */
 .header-top
   background-image: url(../img/bg/header-lg.jpg)
   background-repeat: no-repeat
   background-size: cover
-  height: 54.38rem
+  overflow: hidden
+  height: 100vh
 .menu-wrapp-overlay
   background-color: $color-overlay-65
   padding: 2.188rem
@@ -104,8 +136,20 @@ a
   font-size: 1.125rem
   line-height: 2.25rem
   color: $color-text-white
+  transition: color 0.2s ease
   &:hover
     color: $color-button
 .overlay-header-top
   background-color: $color-overlay-45
   height: inherit
+  padding: 10rem 0 6rem 0
+/* 4.1 Banner */
+.carousel-item-img
+  margin-left: 7.5rem
+  max-width: 100%
+.carousel-item-description
+  color: $color-text-white
+  padding: 3.75rem 0
+  margin-right: 7.5rem
+  h1
+    margin-bottom: 1.25rem
