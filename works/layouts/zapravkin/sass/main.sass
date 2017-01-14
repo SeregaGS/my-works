@@ -260,7 +260,7 @@ a
     position: absolute
     top: 0
     left: 0
-    width: 18.75rem
+    width: 19.75rem
     height: 5rem
     background-color: $color-button
     z-index: -2
@@ -269,7 +269,7 @@ a
     position: absolute
     top: 0
     right: -21.25rem
-    width: 18.75rem
+    width: 19.75rem
     height: 5rem
     background-color: $color-text-white
     z-index: -1
@@ -310,6 +310,13 @@ a
   .about-us-description
     p
       text-align: right
+  .button
+    float: right
+    border-color: $color-text-white
+    &:hover
+      color: rgb(8, 138, 182)
+    &::before
+      background-color: rgba(8, 138, 182, 0.8)
 .partners-wrapp-overlay
   background-color: rgba(0,136,181,.9)
   height: inherit
@@ -324,13 +331,20 @@ a
   transition: filter 0.4s ease
   &:hover
     filter: grayscale(0)
-
+/* 9. Contacts */
 .contacts-wrapp
+  position: relative
   #map
-    position: relative
+    position: absolute
+    top: 0
+    width: 100%
+    height: 900px
     z-index: 10
   .section-product-pad
     position: absolute
     left: 0
     right: 0
     z-index: 11
+.form-wrapp
+  width: 100%
+  background-color: $color-text-white

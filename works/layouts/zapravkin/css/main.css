@@ -382,7 +382,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 18.75rem;
+    width: 19.75rem;
     height: 5rem;
     background-color: #e28800;
     z-index: -2; }
@@ -391,7 +391,7 @@ a {
     position: absolute;
     top: 0;
     right: -21.25rem;
-    width: 18.75rem;
+    width: 19.75rem;
     height: 5rem;
     background-color: #ffffff;
     z-index: -1;
@@ -441,6 +441,13 @@ a {
       background-color: #ffffff; }
   .partners-wrapp .about-us-description p {
     text-align: right; }
+  .partners-wrapp .button {
+    float: right;
+    border-color: #ffffff; }
+    .partners-wrapp .button:hover {
+      color: #088ab6; }
+    .partners-wrapp .button::before {
+      background-color: rgba(8, 138, 182, 0.8); }
 
 .partners-wrapp-overlay {
   background-color: rgba(0, 136, 181, 0.9);
@@ -464,12 +471,21 @@ a {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
 
-.contacts-wrapp #map {
-  position: relative;
-  z-index: 10; }
+/* 9. Contacts */
+.contacts-wrapp {
+  position: relative; }
+  .contacts-wrapp #map {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 10; }
+  .contacts-wrapp .section-product-pad {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 11; }
 
-.contacts-wrapp .section-product-pad {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 11; }
+.form-wrapp {
+  width: 100%;
+  background-color: #ffffff; }
