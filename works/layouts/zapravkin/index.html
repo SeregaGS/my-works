@@ -23,6 +23,23 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/libs.min.css">
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap,
+          myPlacemark;
+
+      function init(){
+          myMap = new ymaps.Map("map", {
+              center: [54.73393428, 55.96664947],
+              zoom: 14,
+              controls: []
+          });
+          myPlacemark = new ymaps.Placemark([54.73393428, 55.96664947], { hintContent: 'Уфа!', balloonContent: 'Столица России' });
+
+          myMap.geoObjects.add(myPlacemark);
+      }
+    </script>
   </head>
   <body>
     <header class="header-top">
@@ -258,6 +275,64 @@
                 <div class="about-us-img-wrapp">
                   <img class="about-us-img" src="img/partners.jpg" alt="">
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients-wrapp">
+      <div class="section-product-pad">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <header class="section-title">
+                <h2>Наши клиенты</h2>
+              </header>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                <div id="clients-carousel">
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/1.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/2.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/3.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/4.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/5.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/6.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/7.png" alt="">
+                  </div>
+                  <div class="clients-carousel-item">
+                    <img class="clients-img" src="img/partners/8.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts-wrapp">
+      <div id="map" style="width: 100%; height: 900px">
+        <div class="section-product-pad">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <header class="section-title">
+                  <h2>Контакты</h2>
+                </header>
               </div>
             </div>
           </div>

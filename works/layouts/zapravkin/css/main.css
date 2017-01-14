@@ -445,3 +445,31 @@ a {
 .partners-wrapp-overlay {
   background-color: rgba(0, 136, 181, 0.9);
   height: inherit; }
+
+/* 8. Clients*/
+.clients-wrapp .section-title h2 {
+  margin-bottom: 50px; }
+
+.clients-img {
+  max-width: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: -webkit-filter 0.4s ease;
+  transition: -webkit-filter 0.4s ease;
+  -o-transition: filter 0.4s ease;
+  -moz-transition: filter 0.4s ease;
+  transition: filter 0.4s ease;
+  transition: filter 0.4s ease, -webkit-filter 0.4s ease; }
+  .clients-img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
+.contacts-wrapp #map {
+  position: relative;
+  z-index: 10; }
+
+.contacts-wrapp .section-product-pad {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 11; }
