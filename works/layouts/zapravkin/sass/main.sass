@@ -54,9 +54,9 @@ a
 .owl-prev, .owl-next
   position: absolute
   top: 50%
-  margin-top: -75px
-  width: 30px
-  height: 30px
+  margin-top: -4.688rem
+  width: 1.875rem
+  height: 1.875rem
   background-image: url(../img/arrow.svg)
   background-repeat: no-repeat
 .owl-prev
@@ -169,18 +169,17 @@ a
   background-image: url(../img/bg/section-product-lg.jpg)
   background-repeat: no-repeat
   background-size: cover
-  height: 1000px
 .overlay-products-wrapp
   background-color: $color-overlay-white70
   height: inherit
 .section-product-pad
-  padding: 3.125rem 0
+  padding: 5rem 0
 .section-title
   text-align: center
   margin-bottom: 1.875rem
   h2
     color: $color-text-wblack
-    margin-bottom: 21px
+    margin-bottom: 1.313rem
     position: relative
     &::before
       content: ""
@@ -206,34 +205,34 @@ a
     font-size: 1.125rem
     line-height: 1.5rem
     display: inline-block
-    max-width: 1200px
+    max-width: 62.5rem
     width: 100%
 /* 5.1 Item */
 .products-wrapp-item
-  margin: 30px 20px 0 20px
-  max-width: 452px
-  height: 657px
-  box-shadow: 0px 3px 7px rgba(0,0,0,.35)
+  margin: 1.875rem 1.25rem 0 1.25rem
+  max-width: 28.25rem
+  height: 41.06rem
+  box-shadow: 0 0.1875rem 0.4375rem rgba(0,0,0,.35)
   background-color: $color-text-white
   display: inline-block
 .products-item-img-wrap
   background-image: url(../img/bg/products.jpg)
   background-size: cover
   width: 100%
-  height: 270px
+  height: 16.88rem
   position: relative
 .products-item-img-wrap-overlay
   background-color: $color-overlay-blk80
   height: inherit
   text-align: center
-  padding: 42px 0
+  padding: 2.625rem 0
 .products-item-img
-  height: 200px
+  height: 12.5rem
 .products-item-description
   padding: 3.125rem
   text-align: center
   h3
-    margin-bottom: 18px
+    margin-bottom: 1.125rem
     text-align: left
   p
     font-size: 1rem
@@ -249,29 +248,29 @@ a
   font-size: 0.875rem
   text-transform: uppercase
   color: $color-text-white
-  padding: 18px 60px
-  border-radius: 3px
-  border: 3px solid $color-button
+  padding: 1.125rem 3.75rem
+  border-radius: 0.1875rem
+  border: 0.1875rem solid $color-button
   position: relative
   z-index: 1
   overflow: hidden
-  margin-top: 30px
+  margin-top: 1.875rem
   &::before
     content: ""
     position: absolute
     top: 0
     left: 0
-    width: 300px
-    height: 80px
+    width: 18.75rem
+    height: 5rem
     background-color: $color-button
     z-index: -2
   &::after
     content: ""
     position: absolute
     top: 0
-    right: -340px
-    width: 300px
-    height: 80px
+    right: -21.25rem
+    width: 18.75rem
+    height: 5rem
     background-color: $color-text-white
     z-index: -1
     transition: right 0.5s ease
@@ -279,11 +278,38 @@ a
   &:hover
     color: $color-button
     &::after
-      right: -20px
+      right: -1.25rem
 .products-item-img-review
-  max-width: 200px
+  max-width: 12.5rem
   width: 100%
   left: 50%
-  margin-left: -100px
+  margin-left: -6.25rem
   position: absolute
-  bottom: -25px
+  bottom: -1.563rem
+/* 6. About us */
+.about-us-wrapp
+  .section-title
+    h2
+      margin-bottom: 50px
+.about-us-img
+  max-width: 100%
+.about-us-description
+  p
+    padding-bottom: 22px
+/* 7. Partners*/
+.partners-wrapp
+  background-image: url(../img/bg/slider1-bg1.jpg)
+  background-size: cover
+  color: $color-text-white
+  .section-title
+    h2
+      margin-bottom: 50px
+      color: $color-text-white
+      &::before, &::after
+        background-color: $color-text-white
+  .about-us-description
+    p
+      text-align: right
+.partners-wrapp-overlay
+  background-color: rgba(0,136,181,.9)
+  height: inherit
