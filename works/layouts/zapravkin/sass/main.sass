@@ -6,6 +6,7 @@ body
   font-size: 1rem
   line-height: 1.5
   min-width: 18.75rem
+  // overflow-x: hidden
 a
   &:hover,
   &:focus
@@ -22,10 +23,17 @@ nav
 h1
   font-family: "RobotoSlab-Bold"
   font-size: 3rem
+h2
+  font-family: "RobotoSlab-Bold"
+  font-size: 2.75rem
+h3
+  font-family: "RobotoSlab-Bold"
+  font-size: 1.75rem
 p
   font-family: "OpenSans-Regular"
   font-size: 1.125rem
   line-height: 1.5rem
+  margin-bottom: 0
 a
   font-family: "RobotoSlab-Bold"
 /* 3. Переопределение */
@@ -62,7 +70,6 @@ a
   background-repeat: no-repeat
   background-size: cover
   overflow: hidden
-
 .menu-wrapp-overlay
   background-color: $color-overlay-65
   padding: 2.188rem
@@ -144,6 +151,8 @@ a
   height: inherit
   padding: 10rem 0 6rem 0
 /* 4.1 Banner */
+.carousel-item
+  text-align: center
 .carousel-item-img
   margin-left: 7.5rem
   max-width: 100%
@@ -151,5 +160,130 @@ a
   color: $color-text-white
   padding: 3.75rem 0
   margin-right: 7.5rem
+  text-align: left
   h1
     margin-bottom: 1.25rem
+/* 5.Products */
+.products-wrapp
+  width: 100%
+  background-image: url(../img/bg/section-product-lg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  height: 1000px
+.overlay-products-wrapp
+  background-color: $color-overlay-white70
+  height: inherit
+.section-product-pad
+  padding: 3.125rem 0
+.section-title
+  text-align: center
+  margin-bottom: 1.875rem
+  h2
+    color: $color-text-wblack
+    margin-bottom: 21px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      margin-top: 1.3rem
+      margin-left: -1.563rem
+      width: 0.626rem
+      height: 0.626rem
+      background-color: $color-text-wblack
+      transform: rotate(45deg)
+    &::after
+      content: ""
+      position: absolute
+      margin-top: 1.3rem
+      margin-left: 0.8rem
+      width: 0.626rem
+      height: 0.626rem
+      background-color: $color-text-wblack
+      transform: rotate(45deg)
+  p
+    font-family: "OpenSans-Semibold"
+    color: $color-text-wblack
+    font-size: 1.125rem
+    line-height: 1.5rem
+    display: inline-block
+    max-width: 1200px
+    width: 100%
+/* 5.1 Item */
+.products-wrapp-item
+  margin: 30px 20px 0 20px
+  max-width: 452px
+  height: 657px
+  box-shadow: 0px 3px 7px rgba(0,0,0,.35)
+  background-color: $color-text-white
+  display: inline-block
+.products-item-img-wrap
+  background-image: url(../img/bg/products.jpg)
+  background-size: cover
+  width: 100%
+  height: 270px
+  position: relative
+.products-item-img-wrap-overlay
+  background-color: $color-overlay-blk80
+  height: inherit
+  text-align: center
+  padding: 42px 0
+.products-item-img
+  height: 200px
+.products-item-description
+  padding: 3.125rem
+  text-align: center
+  h3
+    margin-bottom: 18px
+    text-align: left
+  p
+    font-size: 1rem
+    font-family: "OpenSans-Semibold"
+    line-height: 1.25rem
+    text-align: left
+.button-wrapp
+  display: inline-block
+  position: relative
+.button
+  display: inline-block
+  font-family: "OpenSans-Bold"
+  font-size: 0.875rem
+  text-transform: uppercase
+  color: $color-text-white
+  padding: 18px 60px
+  border-radius: 3px
+  border: 3px solid $color-button
+  position: relative
+  z-index: 1
+  overflow: hidden
+  margin-top: 30px
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 300px
+    height: 80px
+    background-color: $color-button
+    z-index: -2
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    right: -340px
+    width: 300px
+    height: 80px
+    background-color: $color-text-white
+    z-index: -1
+    transition: right 0.5s ease
+    transform: skewX(-48deg)
+  &:hover
+    color: $color-button
+    &::after
+      right: -20px
+.products-item-img-review
+  max-width: 200px
+  width: 100%
+  left: 50%
+  margin-left: -100px
+  position: absolute
+  bottom: -25px
