@@ -39,7 +39,8 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
-  min-width: 18.75rem; }
+  min-width: 18.75rem;
+  overflow-x: hidden; }
 
 a:hover, a:focus {
   text-decoration: none;
@@ -94,20 +95,25 @@ a {
   .owl-pagination .active {
     background-color: #ffffff; }
 
+.owl-buttons {
+  position: relative;
+  top: -22rem;
+  max-width: 95.63rem;
+  margin: 0 auto;
+  height: 1.875rem; }
+
 .owl-prev, .owl-next {
   position: absolute;
-  top: 50%;
-  margin-top: -4.688rem;
   width: 1.875rem;
   height: 1.875rem;
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat; }
 
 .owl-prev {
-  left: 10%; }
+  left: 15px; }
 
 .owl-next {
-  right: 10%;
+  right: 15px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -235,7 +241,7 @@ a {
   -o-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   transition: color 0.2s ease; }
-  .number-link:hover {
+  .number-link:hover, .number-link:focus {
     color: #e28800; }
 
 .overlay-header-top {
@@ -404,9 +410,9 @@ a {
     -ms-transform: skewX(-48deg);
     -o-transform: skewX(-48deg);
     transform: skewX(-48deg); }
-  .button:hover {
+  .button:hover, .button:focus {
     color: #e28800; }
-    .button:hover::after {
+    .button:hover::after, .button:focus::after {
       right: -1.25rem; }
 
 .products-item-img-review {
@@ -555,3 +561,10 @@ a {
 
 .privacy-policy-link {
   color: #8a8787; }
+
+/* 11. Popup */
+.forms-popup {
+  position: relative;
+  max-width: 477px;
+  min-width: 290px;
+  margin: 0 auto; }

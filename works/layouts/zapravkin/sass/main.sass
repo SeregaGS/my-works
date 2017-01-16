@@ -6,7 +6,7 @@ body
   font-size: 1rem
   line-height: 1.5
   min-width: 18.75rem
-  // overflow-x: hidden
+  overflow-x: hidden
 a
   &:hover,
   &:focus
@@ -51,18 +51,22 @@ a
     margin: 0 0.25rem
   .active
     background-color: $color-text-white
+.owl-buttons
+  position: relative
+  top: -22rem
+  max-width: 95.63rem
+  margin: 0 auto
+  height: 1.875rem
 .owl-prev, .owl-next
   position: absolute
-  top: 50%
-  margin-top: -4.688rem
   width: 1.875rem
   height: 1.875rem
   background-image: url(../img/arrow.svg)
   background-repeat: no-repeat
 .owl-prev
-  left: 10%
+  left: 15px
 .owl-next
-  right: 10%
+  right: 15px
   transform: rotate(180deg)
 /* 4. Header */
 .header-top
@@ -144,7 +148,7 @@ a
   line-height: 2.25rem
   color: $color-text-white
   transition: color 0.2s ease
-  &:hover
+  &:hover, &:focus
     color: $color-button
 .overlay-header-top
   background-color: $color-overlay-45
@@ -275,7 +279,7 @@ a
     z-index: -1
     transition: right 0.5s ease
     transform: skewX(-48deg)
-  &:hover
+  &:hover, &:focus
     color: $color-button
     &::after
       right: -1.25rem
@@ -405,3 +409,9 @@ a
       color: $color-button
 .privacy-policy-link
   color: $color-copyright
+/* 11. Popup */
+.forms-popup
+  position: relative
+  max-width: 477px
+  min-width: 290px
+  margin: 0 auto

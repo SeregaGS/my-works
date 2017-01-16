@@ -29,13 +29,13 @@
       <div class="menu-wrapp-overlay">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-2">
               <a class="logo" href="">
                 <img class="logo-img" src="img/cheese-logo.svg" alt="">
                 <span class="logo-name">Поставкин<span class="logo-name-letter">Ъ</span></span>
               </a>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-8">
               <nav class="navigation-wrapp">
                 <ul>
                   <li class="navigation">
@@ -56,9 +56,9 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-3 col-sm-2">
               <div class="number">
-                <a class="number-link" href="tel:89999999999"><i class="fa fa-phone-square" aria-hidden="true"></i>+7(999)999-99-99</a>
+                <a class="number-link" href="#forms-top"><i class="fa fa-phone-square" aria-hidden="true"></i>+7(999)999-99-99</a>
               </div>
             </div>
           </div>
@@ -69,10 +69,10 @@
           <div class="carousel-item">
             <div class="container-fluid">
               <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-xs-4">
                   <img class="carousel-item-img" src="img/products/img-banner-1.png" alt="">
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-xs-8">
                   <div class="carousel-item-description">
                     <h1>Сыр и сырная продукция</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -252,7 +252,7 @@
                 <div class="about-us-description">
                   <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
                   <p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI век</p>
-                  <a href="" class="button">Заказать прайс</a>
+                  <a href="#forms-price" class="button prices-link">Заказать прайс</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -346,15 +346,52 @@
         </div>
       </div>
     </section>
+    <!-- popup -->
+    <div id="forms-top" class="forms-popup mfp-hide">
+      <div class="form-wrapp">
+        <div class="form-title">
+          <h3>Заказать звонок</h3>
+        </div>
+        <form class="form" action="">
+          <label>Введите ваше имя<sup>*</sup>
+            <input type="text" name="name" placeholder="Введите ваше имя" required>
+          </label>
+          <label>Введите ваш номер телефона<sup>*</sup>
+            <input type="tel" name="name" placeholder="Введите ваше имя" required>
+          </label>
+          <button class="button" type="submit" name="button" >Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+    <div id="forms-price" class="forms-popup mfp-hide">
+      <div class="form-wrapp">
+        <div class="form-title">
+          <h3>Заказать прайс</h3>
+        </div>
+        <form class="form" action="">
+          <label>Введите ваше имя<sup>*</sup>
+            <input type="text" name="name" placeholder="Введите ваше имя" required>
+          </label>
+          <label>Введите вашу организацию<sup>*</sup>
+            <input type="text" name="name" placeholder="Введите ваше имя" required>
+          </label>
+          <label>Введите ваш номер телефона<sup>*</sup>
+            <input type="tel" name="name" placeholder="Введите ваше имя" required>
+          </label>
+          <label>Введите ваш Email
+            <input type="email" name="name" placeholder="Введите ваше имя">
+          </label>
+          <button class="button" type="submit" name="button" >Заказать звонок</button>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
       <div class="section-product-pad">
         <div class="container-fluid">
-          <div class="row">
-            <small class="legal-address">ООО "ПоставкинЪ" ОГРН 115746385158, ИНН 772130871 г.Уфа, Рязанский пр., 10</small>
-            <small class="privacy-policy">
-              <a class="privacy-policy-link" href="">Политика конфиденциальности</a>
-            </small>
-          </div>
+          <small class="legal-address">ООО "ПоставкинЪ" ОГРН 115746385158, ИНН 772130871 г.Уфа, Рязанский пр., 10</small>
+          <small class="privacy-policy">
+            <a class="privacy-policy-link" href="">Политика конфиденциальности</a>
+          </small>
         </div>
       </div>
     </footer>
