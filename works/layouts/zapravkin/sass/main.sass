@@ -334,11 +334,12 @@ a
 /* 9. Contacts */
 .contacts-wrapp
   position: relative
+  height: 900px
   #map
     position: absolute
     top: 0
     width: 100%
-    height: 900px
+    height: 100%
     z-index: 10
   .section-product-pad
     position: absolute
@@ -369,7 +370,38 @@ a
     display: block
     font-size: 16px
     font-family: "RobotoSlab-Bold"
-  .form-email
+  .form-email-help
     font-size: 14px
     font-family: "OpenSans-Regular"
     color: $color-copyright
+  .button
+    outline: none
+    width: 100%
+    cursor: pointer
+    &:focus
+      outline: none
+    &::before
+      width: 23.75rem
+    &::after
+      width: 28.75rem
+      right: -31.25rem
+    &:hover
+      &::after
+        right: -1.2rem
+  sup
+    color: red
+/* 10. Footer */
+.footer
+  .section-product-pad
+    padding: 2.5rem 0
+.legal-address
+  color: $color-copyright
+.privacy-policy
+  float: right
+  border-bottom: 1px dashed $color-copyright
+  &:hover
+    border-bottom-color: $color-button
+    .privacy-policy-link
+      color: $color-button
+.privacy-policy-link
+  color: $color-copyright

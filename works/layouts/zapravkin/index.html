@@ -23,23 +23,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/libs.min.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script type="text/javascript">
-      ymaps.ready(init);
-      var myMap,
-          myPlacemark;
-
-      function init(){
-          myMap = new ymaps.Map("map", {
-              center: [54.73393428, 55.96664947],
-              zoom: 14,
-              controls: []
-          });
-          myPlacemark = new ymaps.Placemark([54.73393428, 55.96664947], { hintContent: '000 "ПоставкинЪ"', balloonContent: '' });
-
-          myMap.geoObjects.add(myPlacemark);
-      }
-    </script>
   </head>
   <body>
     <header class="header-top">
@@ -344,17 +327,17 @@
                     <h3>Заказать звонок</h3>
                   </div>
                   <form class="form" action="">
-                    <label>Введите ваше имя
-                      <input type="text" name="name" placeholder="Введите ваше имя">
+                    <label>Введите ваше имя<sup>*</sup>
+                      <input type="text" name="name" placeholder="Введите ваше имя" required>
                     </label>
-                    <label>Введите ваш номер телефона
-                      <input type="text" name="name" placeholder="Введите ваше имя">
+                    <label>Введите ваш номер телефона<sup>*</sup>
+                      <input type="tel" name="name" placeholder="Введите ваше имя" required>
                     </label>
-                    <label>Введите ваш Email
-                      <input type="text" name="name" placeholder="Введите ваше имя">
-                      <span class="form-email">Для получения новостий, пожалуйста заполните поле</span>
+                    <label>Введите ваш Email <small>(Не обязательно)</small>
+                      <input type="email" name="name" placeholder="Введите ваше имя">
+                      <span class="form-email-help">Для получения новостий, пожалуйста заполните поле</span>
                     </label>
-                    <button class="button" type="button" name="button" >Заказать звонок</button>
+                    <button class="button" type="submit" name="button" >Заказать звонок</button>
                   </form>
                 </div>
               </div>
@@ -363,8 +346,37 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="section-product-pad">
+        <div class="container-fluid">
+          <div class="row">
+            <small class="legal-address">ООО "ПоставкинЪ" ОГРН 115746385158, ИНН 772130871 г.Уфа, Рязанский пр., 10</small>
+            <small class="privacy-policy">
+              <a class="privacy-policy-link" href="">Политика конфиденциальности</a>
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- JS -->
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap,
+          myPlacemark;
+
+      function init(){
+          myMap = new ymaps.Map("map", {
+              center: [54.73393428, 55.96664947],
+              zoom: 14,
+              controls: []
+          });
+          myPlacemark = new ymaps.Placemark([54.73393428, 55.96664947], { hintContent: '000 "ПоставкинЪ"', balloonContent: '' });
+
+          myMap.geoObjects.add(myPlacemark);
+      }
+    </script>
   </body>
 </html>
