@@ -54,6 +54,9 @@ nav {
     nav ul li {
       display: inline-block; }
 
+.center {
+  text-align: center; }
+
 /* 2. Типографика */
 h1 {
   font-family: "RobotoSlab-Bold";
@@ -253,7 +256,8 @@ button {
   -webkit-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
-  transition: color 0.2s ease; }
+  transition: color 0.2s ease;
+  position: relative; }
   .number-link:hover, .number-link:focus {
     color: #e28800; }
 
