@@ -120,6 +120,19 @@ a {
   -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
+button {
+  background: transparent;
+  border: 0; }
+
+#privacy-policy.forms-popup {
+  max-width: 660px; }
+  #privacy-policy.forms-popup .form-title h3 {
+    font-size: 2rem;
+    text-align: left; }
+  #privacy-policy.forms-popup p {
+    font-size: 0.9rem;
+    margin: 16px 0; }
+
 /* 4. Header */
 .header-top {
   background-image: url(../img/bg/header-lg.jpg);
@@ -325,6 +338,7 @@ a {
 
 /* 5.1 Item */
 .products-wrapp-item {
+  vertical-align: top;
   margin: 1.875rem 1.25rem 0 1.25rem;
   max-width: 28.25rem;
   height: 41.06rem;
@@ -360,7 +374,7 @@ a {
     text-align: left; }
   .products-item-description p {
     font-size: 1rem;
-    font-family: "OpenSans-Semibold";
+    font-family: "OpenSans-Regular";
     line-height: 1.25rem;
     text-align: left; }
 
@@ -370,7 +384,6 @@ a {
 
 .button {
   display: inline-block;
-  font-family: "OpenSans-Bold";
   font-size: 0.875rem;
   text-transform: uppercase;
   color: #ffffff;
@@ -378,11 +391,12 @@ a {
   -webkit-border-radius: 0.1875rem;
   -moz-border-radius: 0.1875rem;
   border-radius: 0.1875rem;
-  border: 0.1875rem solid #e28800;
+  border: 0.16rem solid #e28800;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  margin-top: 1.875rem; }
+  margin-top: 1.875rem;
+  letter-spacing: 0.05rem; }
   .button::before {
     content: "";
     position: absolute;
@@ -530,7 +544,8 @@ a {
 .form .button {
   outline: none;
   width: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "RobotoSlab-Bold"; }
   .form .button:focus {
     outline: none; }
   .form .button::before {

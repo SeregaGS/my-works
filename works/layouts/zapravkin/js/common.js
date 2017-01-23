@@ -7,7 +7,7 @@ $(document).ready(function(){
     itemsMobile : false,
     loop      : true,
     nav       : true,
-    autoPlay  : 5000,
+    // autoPlay  : 5000,
     navigation : true,
     navigationText : false
   });
@@ -20,8 +20,8 @@ $(document).ready(function(){
     navigationText : false
   });
 
-  $('.number-link, .prices-link').magnificPopup({
-  type:'inline',
-  midClick: true
-});
+  $('.number-link, .prices-link, .privacy-policy-link').magnificPopup({
+    type:'inline',
+    midClick: true
+  });
 });

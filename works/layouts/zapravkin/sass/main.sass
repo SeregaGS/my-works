@@ -68,6 +68,18 @@ a
 .owl-next
   right: 15px
   transform: rotate(180deg)
+button
+  background: transparent
+  border: 0
+#privacy-policy.forms-popup
+  max-width: 660px
+  .form-title
+    h3
+      font-size: 2rem
+      text-align: left
+  p
+    font-size: 0.9rem
+    margin: 16px 0
 /* 4. Header */
 .header-top
   background-image: url(../img/bg/header-lg.jpg)
@@ -213,6 +225,7 @@ a
     width: 100%
 /* 5.1 Item */
 .products-wrapp-item
+  vertical-align: top
   margin: 1.875rem 1.25rem 0 1.25rem
   max-width: 28.25rem
   height: 41.06rem
@@ -240,7 +253,7 @@ a
     text-align: left
   p
     font-size: 1rem
-    font-family: "OpenSans-Semibold"
+    font-family: "OpenSans-Regular"
     line-height: 1.25rem
     text-align: left
 .button-wrapp
@@ -248,17 +261,17 @@ a
   position: relative
 .button
   display: inline-block
-  font-family: "OpenSans-Bold"
   font-size: 0.875rem
   text-transform: uppercase
   color: $color-text-white
   padding: 1.125rem 3.75rem
   border-radius: 0.1875rem
-  border: 0.1875rem solid $color-button
+  border: 0.16rem solid $color-button
   position: relative
   z-index: 1
   overflow: hidden
   margin-top: 1.875rem
+  letter-spacing: 0.05rem
   &::before
     content: ""
     position: absolute
@@ -382,6 +395,7 @@ a
     outline: none
     width: 100%
     cursor: pointer
+    font-family: "RobotoSlab-Bold"
     &:focus
       outline: none
     &::before
