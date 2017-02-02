@@ -50,7 +50,8 @@ nav {
   font-family: "RobotoSlab-Bold"; }
   nav ul {
     list-style-type: none;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 0; }
     nav ul li {
       display: inline-block; }
 
@@ -197,7 +198,9 @@ button {
   transition: color 0.4s ease; }
 
 .navigation-wrapp {
-  text-align: center; }
+  text-align: center;
+  width: 80%;
+  float: left; }
 
 .navigation-link {
   display: block;
@@ -243,7 +246,8 @@ button {
   transform: rotate(45deg); }
 
 .number {
-  float: right; }
+  float: right;
+  width: 20%; }
   .number .fa-phone-square {
     font-size: 1.313rem;
     margin-right: 0.625rem; }
@@ -266,7 +270,8 @@ button {
   height: inherit;
   padding: 10rem 0 6rem 0; }
 
-/* 4.1 Banner */
+/* 4.1 Burger */
+/* 4.2 Banner */
 .carousel-item {
   text-align: center; }
 
