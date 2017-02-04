@@ -24,4 +24,13 @@ $(document).ready(function(){
     type:'inline',
     midClick: true
   });
+
+  $("#burger").click(function(){
+    $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "block"}).show();
+    $(".burger-wrap").css({"display": "none"}).show();
+  });
+  $("#burger-close").click(function(){
+    $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
+    $(".burger-wrap").css({"display": "block"}).show();
+  });
 });

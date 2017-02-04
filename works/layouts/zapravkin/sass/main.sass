@@ -119,8 +119,11 @@ button
   transition: color 0.4s ease
 .navigation-wrapp
   text-align: center
-  width: 80%
+  width: 100%
   float: left
+.navigation-wrapp-link
+  width: 80%
+  display: inline-block
 .navigation-link
   display: block
   position: relative
@@ -174,8 +177,47 @@ button
   height: inherit
   padding: 10rem 0 6rem 0
 /* 4.1 Burger */
-
-
+.burger-wrap
+  position: relative
+  float: right
+  z-index: 12
+  width: 28px
+  height: 16px
+  cursor: pointer
+  display: none
+  margin-top: 10px
+  div
+    background-color: #fff
+    &:nth-child(1)
+      height: 2px
+    &:nth-child(2)
+      margin-top: 5px
+      height: 2px
+    &:nth-child(3)
+      margin-top: 5px
+      height: 2px
+.burger-wrap-close
+  position: absolute
+  z-index: 16
+  width: 28px
+  height: 22px
+  top: 2.3rem
+  right: 5.6em
+  display: none
+  cursor: pointer
+  div
+    background-color: #fff
+    position: absolute
+    top: 10px
+    &:nth-child(1)
+      height: 2px
+      width: 100%
+      transform: rotate(45deg)
+      margin-top: 0
+    &:nth-child(2)
+      width: 100%
+      height: 2px
+      transform: rotate(-45deg)
 /* 4.2 Banner */
 .carousel-item
   text-align: center

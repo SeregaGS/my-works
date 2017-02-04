@@ -1,3 +1,4 @@
+@import 'color'
 @media screen and (max-width: 1536px)
   .container-fluid, .owl-buttons
     max-width: 90%
@@ -141,3 +142,39 @@
   .products-item-img-review
     max-width: 10.5rem
     margin-left: -5.25rem
+@media screen and (max-width: 1024px)
+  .burger-wrap
+    display: block
+  .number
+    display: none
+    width: 100%
+    float: none
+    margin-top: 35px
+  .navigation-wrapp
+    padding-top: 3.7rem
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: $color-overlay-blk80
+    z-index: 15
+  nav
+    ul
+      li
+        width: 100%
+  .navigation-link
+    font-size: 1.6rem
+    line-height: 2
+    &::before
+      width: 0
+      height: 0
+  .number-link, .number .fa-phone-square
+    font-size: 1.3rem
+  .number .fa-phone-square
+    left: -25px
+    top: 8px
+  .number-link
+    margin-left: 25px
+    display: inline-block
