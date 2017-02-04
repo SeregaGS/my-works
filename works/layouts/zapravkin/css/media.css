@@ -155,7 +155,8 @@
     width: 100%; }
   .navigation-link {
     font-size: 1.6rem;
-    line-height: 2; }
+    line-height: 2;
+    padding: 0; }
     .navigation-link::before {
       width: 0;
       height: 0; }
@@ -166,4 +167,6 @@
     top: 8px; }
   .number-link {
     margin-left: 25px;
-    display: inline-block; } }
+    display: inline-block; }
+  .navigation-wrapp-link {
+    width: 100%; } }

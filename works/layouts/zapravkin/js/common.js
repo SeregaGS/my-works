@@ -27,7 +27,7 @@ $(document).ready(function(){
 
   $("#burger").click(function(){
     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "block"}).show();
-    $(".burger-wrap").css({"display": "none"}).show();
+    $(".burger-wrap").css({"display": "none"}).hide();
   });
   $("#burger-close").click(function(){
     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
