@@ -219,6 +219,11 @@ button {
   .navigation-link:hover {
     color: #e28800;
     text-decoration: underline; }
+  .navigation-link:active {
+    color: #e28800;
+    text-decoration: underline; }
+  .navigation-link:focus {
+    color: #e28800; }
   .navigation-link::before {
     content: "";
     position: absolute;
@@ -306,8 +311,7 @@ button {
   height: 22px !important;
   margin: 0 auto;
   display: none;
-  cursor: pointer;
-  display: inline-block; }
+  cursor: pointer; }
 
 .burger-close {
   width: 28px;

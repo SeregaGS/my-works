@@ -135,14 +135,14 @@
 
 @media screen and (max-width: 1024px) {
   .burger-wrap {
-    display: block; }
+    display: block !important; }
   .number {
     display: none;
     width: 100%;
     float: none;
     margin-top: 35px; }
   .navigation-wrapp {
-    padding-top: 3.7rem;
+    padding-top: 4.7rem;
     display: none;
     position: fixed;
     left: 0;
