@@ -19,47 +19,20 @@ $(document).ready(function(){
     navigation : false,
     navigationText : false
   });
-
   $('.number-link, .prices-link, .privacy-policy-link').magnificPopup({
     type:'inline',
     midClick: true
   });
-
-  // $("#burger").click(function(){
-  //   $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "block"}).show();
-  //   $(".burger-wrap").css({"display": "none"}).hide();
-  // });
-  // $("#burger-close").click(function(){
-  //   $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
-  //   $(".burger-wrap").css({"display": "block"}).show();
-  // });
-  // $(".navigation-link").click(function(){
-  //   $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
-  //   $(".burger-wrap").css({"display": "block"}).show();
-  // });
-  // if (screen.width >= "1024") {
-  //   $("#burger").click(function(){
-  //     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "block"}).show();
-  //     $(".burger-wrap").css({"display": "none"}).hide();
-  //   });
-  //   $("#burger-close").click(function(){
-  //     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
-  //     $(".burger-wrap").css({"display": "block"}).show();
-  //   });
-  //   $(".navigation-link").click(function(){
-  //     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
-  //     $(".burger-wrap").css({"display": "block"}).show();
-  //   });
-  // };
   $("#burger").click(function(){
     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "block"}).show();
-    $(".burger-wrap").css({"display": "none"}).hide();
+    $("#burger.burger-wrap").css({"display": "none"}).hide();
+    $(".navigation-wrapp").addClass("navigation-link-click");
   });
   $("#burger-close").click(function(){
     $(".navigation-wrapp, .burger-wrap-close, .number").css({"display": "none"}).hide();
-    $(".burger-wrap").css({"display": "block"}).show();
+    $("#burger.burger-wrap").css({"display": "block"}).show();
   });
-  
+
   $("#nav .navigation").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
