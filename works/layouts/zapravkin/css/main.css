@@ -438,7 +438,7 @@ button {
   position: relative; }
 
 .products-item-img-wrap-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.45);
   height: inherit;
   text-align: center;
   padding: 2.625rem 0; }

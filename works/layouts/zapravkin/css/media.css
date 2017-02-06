@@ -8,7 +8,7 @@
     max-width: 29%;
     height: auto; }
   .overlay-header-top {
-    padding: 5.3rem 0 4.7rem; }
+    padding: 6.3rem 0 3.7rem; }
   .navigation-link, .number-link, .number .fa-phone-square {
     font-size: 0.85rem; }
   .menu-wrapp-overlay {
@@ -178,3 +178,32 @@
     width: 100%; }
   .carousel-item-description {
     padding: 1.75rem 0; } }
+
+@media screen and (max-width: 992px) {
+  .carousel-item-img {
+    width: auto;
+    height: 350px;
+    margin-left: 0; }
+  .carousel-item-description {
+    margin: 0 4.5rem; }
+  .owl-buttons {
+    top: -23rem; } }
+
+@media screen and (max-width: 635px) {
+  .carousel-item-img {
+    height: 250px; } }
+
+@media screen and (max-width: 530px) {
+  .carousel-item-img {
+    height: 200px; }
+  .carousel-item-description h1 {
+    font-size: 1.8rem;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .logo-name {
+    font-size: 1.2rem; }
+  .logo-img {
+    width: 1.3rem; }
+  .burger-wrap {
+    width: 25px; } }
