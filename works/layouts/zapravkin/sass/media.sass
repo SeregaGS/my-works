@@ -63,6 +63,8 @@
   .form-title
     h3
       font-size: 30px
+  .products-wrapp
+    background-image: url(../img/bg/section-product-1536.jpg)
 @media screen and (max-width: 1366px)
   .header-top
     background-image: url(../img/bg/header-1366.jpg)
@@ -95,6 +97,8 @@
   .form-title
     h3
       font-size: 1.4rem
+  .products-wrapp
+    background-image: url(../img/bg/section-product-1366.jpg)
 @media screen and (max-width: 1160px)
   .number-link, .number .fa-phone-square
     font-size: 0.71rem
@@ -191,6 +195,14 @@
     padding: 1.75rem 0
   .products-wrapp-item
     max-width: 46%
+  .products-item-description
+    .button
+      &::after
+        width: 23.75rem
+        right: -26.25rem
+      &:hover
+        &::after
+          right: -0.5rem
 @media screen and (max-width: 992px)
   .carousel-item-img
     width: auto
@@ -203,6 +215,9 @@
 @media screen and (max-width: 786px)
   .products-wrapp-item
     max-width: 60%
+@media screen and (max-width: 768px)
+  .about-us-img
+    margin-bottom: 2rem
 @media screen and (max-width: 635px)
   .carousel-item-img
     height: 250px
@@ -266,3 +281,6 @@
     padding: 3.5rem 0 2.7rem 0
   .products-item-description
     padding: 2.8rem 2rem 2rem 2rem
+    .button
+      padding: 0.7rem 0
+      width: 90%
