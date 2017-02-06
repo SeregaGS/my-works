@@ -566,6 +566,10 @@ button {
   background-color: rgba(0, 136, 181, 0.9);
   height: inherit; }
 
+.clients-carousel-item {
+  padding: 0.5rem;
+  text-align: center; }
+
 /* 8. Clients*/
 .clients-wrapp .section-title h2 {
   margin-bottom: 50px; }
