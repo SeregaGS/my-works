@@ -90,7 +90,9 @@
   .form-title h3 {
     font-size: 1.4rem; }
   .products-wrapp {
-    background-image: url(../img/bg/section-product-1366.jpg); } }
+    background-image: url(../img/bg/section-product-1366.jpg); }
+  .partners-wrapp {
+    background-image: url(../img/bg/slider1-1366.jpg); } }
 
 @media screen and (max-width: 1160px) {
   .number-link, .number .fa-phone-square {
@@ -188,7 +190,9 @@
     width: 23.75rem;
     right: -26.25rem; }
   .products-item-description .button:hover::after {
-    right: -0.5rem; } }
+    right: -0.5rem; }
+  .partners-wrapp {
+    background-image: url(../img/bg/slider1-1024.jpg); } }
 
 @media screen and (max-width: 992px) {
   .carousel-item-img {
@@ -206,13 +210,23 @@
 
 @media screen and (max-width: 768px) {
   .about-us-img {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .partners-wrapp .about-us-description p {
+    text-align: left; }
+  .partners-wrapp .about-us-description:not(p) {
+    text-align: center; }
+  .partners-wrapp .button {
+    float: none; }
+  .partners-wrapp .about-us-img {
+    display: none; } }
 
 @media screen and (max-width: 635px) {
   .carousel-item-img {
     height: 250px; }
   .products-wrapp-item {
-    max-width: 70%; } }
+    max-width: 70%; }
+  .section-product-pad {
+    padding: 3.5rem 0; } }
 
 @media screen and (max-width: 530px) {
   .carousel-item-img {
