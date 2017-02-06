@@ -354,6 +354,9 @@
                   </form>
                 </div>
               </div>
+            <div class="hidden-carousel-button">
+              <a class="button" href="">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
@@ -443,11 +446,11 @@
 
       function init(){
           myMap = new ymaps.Map("map", {
-              center: [54.73393428, 55.96664947],
+              center: [54.73789416209832,55.93564709100742],
               zoom: 14,
               controls: []
           });
-          myPlacemark = new ymaps.Placemark([54.73393428, 55.96664947], { hintContent: '000 "ПоставкинЪ"', balloonContent: '' });
+          myPlacemark = new ymaps.Placemark([54.73743456994438,55.9332955], { hintContent: 'ООО "Поставкинъ"<br> ОГРН 1160280085833, <br>ИНН 0275906600, <br>450076 РБ, г.Уфа, ул.Гафури, д.105', balloonContent: '' });
 
           myMap.geoObjects.add(myPlacemark);
       }
