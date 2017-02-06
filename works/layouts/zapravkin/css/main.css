@@ -361,6 +361,15 @@ button {
 .hidden-carousel-button {
   display: none;
   text-align: center; }
+  .hidden-carousel-button .button::before {
+    -webkit-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease; }
+  .hidden-carousel-button .button:hover::before {
+    background-color: transparent; }
+  .hidden-carousel-button .button:hover::after {
+    right: -21.25rem; }
 
 /* 5.Products */
 .products-wrapp {
@@ -486,8 +495,8 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 19.75rem;
-    height: 5rem;
+    width: 100%;
+    height: 100%;
     background-color: #e28800;
     z-index: -2; }
   .button::after {
@@ -511,7 +520,7 @@ button {
   .button:hover, .button:focus {
     color: #e28800; }
     .button:hover::after, .button:focus::after {
-      right: -1.25rem; }
+      right: -0.5rem; }
 
 .products-item-img-review {
   max-width: 12.5rem;

@@ -177,7 +177,9 @@
   .navigation-wrapp-link {
     width: 100%; }
   .carousel-item-description {
-    padding: 1.75rem 0; } }
+    padding: 1.75rem 0; }
+  .products-wrapp-item {
+    max-width: 46%; } }
 
 @media screen and (max-width: 992px) {
   .carousel-item-img {
@@ -189,16 +191,26 @@
   .owl-buttons {
     top: -23rem; } }
 
+@media screen and (max-width: 786px) {
+  .products-wrapp-item {
+    max-width: 60%; } }
+
 @media screen and (max-width: 635px) {
   .carousel-item-img {
-    height: 250px; } }
+    height: 250px; }
+  .products-wrapp-item {
+    max-width: 70%; } }
 
 @media screen and (max-width: 530px) {
   .carousel-item-img {
     height: 200px; }
   .carousel-item-description h1 {
     font-size: 1.8rem;
-    text-align: center; } }
+    text-align: center; }
+  .products-wrapp-item {
+    max-width: 100%; }
+  .section-title p {
+    width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .logo-name {
@@ -241,4 +253,8 @@
     margin-top: 8px; }
   .burger-close {
     top: -4px;
-    right: -12px; } }
+    right: -12px; }
+  .overlay-header-top {
+    padding: 3.5rem 0 2.7rem 0; }
+  .products-item-description {
+    padding: 2.8rem 2rem 2rem 2rem; } }
