@@ -137,6 +137,13 @@ button {
     font-size: 0.9rem;
     margin: 16px 0; }
 
+.ymaps-2-1-47-svg-icon {
+  background-image: url(../img/map-marker-icon.png) !important;
+  -moz-background-size: 39px 39px !important;
+  -o-background-size: 39px 39px !important;
+  background-size: 39px 39px !important;
+  height: 39px !important; }
+
 /* 4. Header */
 .header-top {
   background-image: url(../img/bg/header-lg.jpg);
@@ -655,6 +662,13 @@ button {
 
 .form sup {
   color: red; }
+
+.col-form-contacts {
+  float: right;
+  width: 27%;
+  display: inline-block;
+  position: absolute;
+  right: 5rem; }
 
 /* 10. Footer */
 .footer .section-product-pad {
