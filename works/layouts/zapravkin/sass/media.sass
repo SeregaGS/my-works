@@ -60,7 +60,6 @@
     p, .about-us-description-wrap, .partners-description-wrap-ul
       font-size: 0.95rem
       line-height: 1.4
-
   .form-title
     h3
       font-size: 30px
@@ -105,6 +104,12 @@
   .form
     .button
       font-size: 0.7rem
+  #forms-top
+    .button
+      &::before
+        width: 100%
+      &::after
+        width: 29.75rem
 @media screen and (max-width: 1160px)
   .number-link, .number .fa-phone-square
     font-size: 0.71rem
@@ -219,7 +224,7 @@
   .col-form-contacts
     display: none
   .contacts-wrapp
-
+    height: 100vh
 @media screen and (max-width: 992px)
   .carousel-item-img
     width: auto
@@ -229,6 +234,14 @@
     margin: 0 4.5rem
   .owl-buttons
     top: -23rem
+  .privacy-policy
+    display: block
+    float: none
+    text-align: center
+  .legal-address
+    display: block
+    text-align: center
+    margin-bottom: 15px
 @media screen and (max-width: 786px)
   .products-wrapp-item
     max-width: 60%

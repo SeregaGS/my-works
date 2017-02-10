@@ -22,6 +22,43 @@ nav
       display: inline-block
 .center
   text-align: center
+.button
+  display: inline-block
+  font-size: 0.875rem
+  text-transform: uppercase
+  color: $color-text-white
+  padding: 1.125rem 3.75rem
+  border-radius: 0.1875rem
+  border: 0.16rem solid $color-button
+  position: relative
+  z-index: 1
+  overflow: hidden
+  margin-top: 1.875rem
+  letter-spacing: 0.05rem
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $color-button
+    z-index: -2
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    right: -21.25rem
+    width: 19.75rem
+    height: 5rem
+    background-color: $color-text-white
+    z-index: -1
+    transition: right 0.5s ease
+    transform: skewX(-48deg)
+  &:hover, &:focus
+    color: $color-button
+    &::after
+      right: -0.5rem
 /* 2. Типографика */
 h1
   font-family: "RobotoSlab-Bold"
@@ -346,6 +383,14 @@ button
   box-shadow: 0 0.1875rem 0.4375rem rgba(0,0,0,.35)
   background-color: $color-text-white
   display: inline-block
+  .button
+    &::after
+      width: 22.75rem
+      right: -24.25rem
+    &:hover, &:focus
+      color: $color-button
+      &::after
+        right: -2rem
 .products-item-img-wrap
   background-image: url(../img/bg/products.jpg)
   background-size: cover
@@ -373,43 +418,6 @@ button
 .button-wrapp
   display: inline-block
   position: relative
-.button
-  display: inline-block
-  font-size: 0.875rem
-  text-transform: uppercase
-  color: $color-text-white
-  padding: 1.125rem 3.75rem
-  border-radius: 0.1875rem
-  border: 0.16rem solid $color-button
-  position: relative
-  z-index: 1
-  overflow: hidden
-  margin-top: 1.875rem
-  letter-spacing: 0.05rem
-  &::before
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-color: $color-button
-    z-index: -2
-  &::after
-    content: ""
-    position: absolute
-    top: 0
-    right: -21.25rem
-    width: 19.75rem
-    height: 5rem
-    background-color: $color-text-white
-    z-index: -1
-    transition: right 0.5s ease
-    transform: skewX(-48deg)
-  &:hover, &:focus
-    color: $color-button
-    &::after
-      right: -0.5rem
 .products-item-img-review
   max-width: 12.5rem
   width: 100%
@@ -449,6 +457,12 @@ button
       color: rgb(8, 138, 182)
     &::before
       background-color: rgba(8, 138, 182, 0.8)
+    &::after
+      width: 22.75rem
+      right: -24.25rem
+    &:hover, &:focus
+      &::after
+        right: -2rem
 .partners-wrapp-overlay
   background-color: rgba(0,136,181,.9)
   height: inherit
@@ -486,7 +500,7 @@ button
 /* 9. Contacts */
 .contacts-wrapp
   position: relative
-  height: 100vh
+  height: 900px
   #map
     position: absolute
     top: 0
@@ -534,10 +548,10 @@ button
     &:focus
       outline: none
     &::before
-      width: 23.75rem
+      width: 100%
     &::after
-      width: 28.75rem
-      right: -31.25rem
+      width: 35.75rem
+      right: -37.25rem
     &:hover
       &::after
         right: -1.2rem
@@ -557,13 +571,13 @@ button
   color: $color-copyright
 .privacy-policy
   float: right
-  border-bottom: 1px dashed $color-copyright
   &:hover
     border-bottom-color: $color-button
     .privacy-policy-link
       color: $color-button
 .privacy-policy-link
   color: $color-copyright
+  border-bottom: 1px dashed $color-copyright
 /* 11. Popup */
 .forms-popup
   position: relative

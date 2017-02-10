@@ -58,6 +58,53 @@ nav {
 .center {
   text-align: center; }
 
+.button {
+  display: inline-block;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 1.125rem 3.75rem;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  border-radius: 0.1875rem;
+  border: 0.16rem solid #e28800;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 1.875rem;
+  letter-spacing: 0.05rem; }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e28800;
+    z-index: -2; }
+  .button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -21.25rem;
+    width: 19.75rem;
+    height: 5rem;
+    background-color: #ffffff;
+    z-index: -1;
+    -webkit-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    -webkit-transform: skewX(-48deg);
+    -moz-transform: skewX(-48deg);
+    -ms-transform: skewX(-48deg);
+    -o-transform: skewX(-48deg);
+    transform: skewX(-48deg); }
+  .button:hover, .button:focus {
+    color: #e28800; }
+    .button:hover::after, .button:focus::after {
+      right: -0.5rem; }
+
 /* 2. Типографика */
 h1 {
   font-family: "RobotoSlab-Bold";
@@ -488,6 +535,13 @@ button {
   box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
   display: inline-block; }
+  .products-wrapp-item .button::after {
+    width: 22.75rem;
+    right: -24.25rem; }
+  .products-wrapp-item .button:hover, .products-wrapp-item .button:focus {
+    color: #e28800; }
+    .products-wrapp-item .button:hover::after, .products-wrapp-item .button:focus::after {
+      right: -2rem; }
 
 .products-item-img-wrap {
   background-image: url(../img/bg/products.jpg);
@@ -522,53 +576,6 @@ button {
 .button-wrapp {
   display: inline-block;
   position: relative; }
-
-.button {
-  display: inline-block;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 1.125rem 3.75rem;
-  -webkit-border-radius: 0.1875rem;
-  -moz-border-radius: 0.1875rem;
-  border-radius: 0.1875rem;
-  border: 0.16rem solid #e28800;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  margin-top: 1.875rem;
-  letter-spacing: 0.05rem; }
-  .button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e28800;
-    z-index: -2; }
-  .button::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -21.25rem;
-    width: 19.75rem;
-    height: 5rem;
-    background-color: #ffffff;
-    z-index: -1;
-    -webkit-transition: right 0.5s ease;
-    -o-transition: right 0.5s ease;
-    -moz-transition: right 0.5s ease;
-    transition: right 0.5s ease;
-    -webkit-transform: skewX(-48deg);
-    -moz-transform: skewX(-48deg);
-    -ms-transform: skewX(-48deg);
-    -o-transform: skewX(-48deg);
-    transform: skewX(-48deg); }
-  .button:hover, .button:focus {
-    color: #e28800; }
-    .button:hover::after, .button:focus::after {
-      right: -0.5rem; }
 
 .products-item-img-review {
   max-width: 12.5rem;
@@ -610,6 +617,11 @@ button {
       color: #088ab6; }
     .partners-wrapp .button::before {
       background-color: rgba(8, 138, 182, 0.8); }
+    .partners-wrapp .button::after {
+      width: 22.75rem;
+      right: -24.25rem; }
+    .partners-wrapp .button:hover::after, .partners-wrapp .button:focus::after {
+      right: -2rem; }
 
 .partners-wrapp-overlay {
   background-color: rgba(0, 136, 181, 0.9);
@@ -662,7 +674,7 @@ button {
 /* 9. Contacts */
 .contacts-wrapp {
   position: relative;
-  height: 100vh; }
+  height: 900px; }
   .contacts-wrapp #map {
     position: absolute;
     top: 0;
@@ -717,10 +729,10 @@ button {
   .form .button:focus {
     outline: none; }
   .form .button::before {
-    width: 23.75rem; }
+    width: 100%; }
   .form .button::after {
-    width: 28.75rem;
-    right: -31.25rem; }
+    width: 35.75rem;
+    right: -37.25rem; }
   .form .button:hover::after {
     right: -1.2rem; }
 
@@ -742,15 +754,15 @@ button {
   color: #8a8787; }
 
 .privacy-policy {
-  float: right;
-  border-bottom: 1px dashed #8a8787; }
+  float: right; }
   .privacy-policy:hover {
     border-bottom-color: #e28800; }
     .privacy-policy:hover .privacy-policy-link {
       color: #e28800; }
 
 .privacy-policy-link {
-  color: #8a8787; }
+  color: #8a8787;
+  border-bottom: 1px dashed #8a8787; }
 
 /* 11. Popup */
 .forms-popup {
