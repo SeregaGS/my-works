@@ -19,7 +19,7 @@ $(document).ready(function(){
     navigation : false,
     navigationText : false
   });
-  $('.number-link, .prices-link, .privacy-policy-link').magnificPopup({
+  $('.number-link, .prices-link, .privacy-policy-link, .hidden-carousel-text').magnificPopup({
     type:'inline',
     midClick: true
   });
