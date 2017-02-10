@@ -286,27 +286,6 @@ button {
   height: inherit;
   padding: 10rem 0 6rem 0; }
 
-.about-us-description-wrap {
-  padding-left: 0;
-  list-style-type: none; }
-  .about-us-description-wrap li {
-    padding-top: 0.2rem;
-    padding-left: 1.5rem;
-    position: relative; }
-    .about-us-description-wrap li::before {
-      content: "";
-      position: absolute;
-      width: 0.443rem;
-      left: 6px;
-      top: 12px;
-      height: 0.443rem;
-      background-color: rgba(0, 0, 0, 0.8);
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg); }
-
 /* 4.1 Burger */
 .burger-wrap {
   position: relative;
@@ -476,6 +455,27 @@ button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.about-us-description-wrap {
+  padding-left: 0;
+  list-style-type: none; }
+  .about-us-description-wrap li {
+    padding-top: 0.2rem;
+    padding-left: 1.5rem;
+    position: relative; }
+    .about-us-description-wrap li::before {
+      content: "";
+      position: absolute;
+      width: 0.443rem;
+      left: 6px;
+      top: 12px;
+      height: 0.443rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
 
 /* 5.1 Item */
 .products-wrapp-item {
