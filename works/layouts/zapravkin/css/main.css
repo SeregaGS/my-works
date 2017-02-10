@@ -463,7 +463,8 @@ button {
   text-align: right;
   position: relative;
   font-size: 1.2rem;
-  font-family: "OpenSans-ExtraBold"; }
+  font-family: "OpenSans-ExtraBold";
+  margin-right: 1.85rem; }
 
 .prices-rub {
   bottom: 2px;
