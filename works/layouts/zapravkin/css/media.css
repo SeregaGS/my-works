@@ -219,8 +219,12 @@
 @media screen and (max-width: 768px) {
   .about-us-img {
     margin-bottom: 2rem; }
-  .partners-wrapp .about-us-description p {
+  .partners-wrapp .about-us-description p, .partners-wrapp .about-us-description .partners-description-wrap-ul {
     text-align: left; }
+  .partners-wrapp .about-us-description .partners-description-wrap-ul li {
+    padding-left: 1.5rem; }
+    .partners-wrapp .about-us-description .partners-description-wrap-ul li::before {
+      left: 6px; }
   .partners-wrapp .about-us-description:not(p) {
     text-align: center; }
   .partners-wrapp .button {

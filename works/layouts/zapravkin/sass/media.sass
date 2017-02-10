@@ -237,8 +237,13 @@
     margin-bottom: 2rem
   .partners-wrapp
     .about-us-description
-      p
+      p, .partners-description-wrap-ul
         text-align: left
+      .partners-description-wrap-ul
+        li
+          padding-left: 1.5rem
+          &::before
+            left: 6px
       &:not(p)
         text-align: center
     .button
