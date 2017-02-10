@@ -154,7 +154,7 @@ button {
   overflow: hidden; }
 
 .menu-wrapp-overlay {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 2.188rem;
   color: #ffffff; }
 
@@ -282,7 +282,7 @@ button {
     color: #e28800; }
 
 .overlay-header-top {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.55);
   height: inherit;
   padding: 10rem 0 6rem 0; }
 
@@ -499,7 +499,7 @@ button {
   position: relative; }
 
 .products-item-img-wrap-overlay {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.55);
   height: inherit;
   text-align: center;
   padding: 2.625rem 0; }
