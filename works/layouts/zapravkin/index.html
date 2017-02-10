@@ -374,12 +374,12 @@
                   <div class="form-title">
                     <h3>Заказать звонок</h3>
                   </div>
-                  <form class="form" action="">
+                  <form id="form-bottom" class="form">
                     <label>Введите ваше имя<sup>*</sup>
-                      <input type="text" name="name" placeholder="Введите ваше имя" required>
+                      <input type="text" name="name" minlength="2" placeholder="Ваше имя" required>
                     </label>
                     <label>Введите ваш номер телефона<sup>*</sup>
-                      <input type="tel" name="name" placeholder="Введите ваше имя" required>
+                      <input type="tel" name="tel" minlength="11" maxlength="11" placeholder="89179999999" required>
                     </label>
                     <label>Введите ваш Email <small>(Не обязательно)</small>
                       <input type="email" name="name" placeholder="Введите ваше имя">
@@ -412,12 +412,12 @@
         <div class="form-title">
           <h3>Заказать звонок</h3>
         </div>
-        <form class="form" action="">
+        <form id="forms-top-wrap" class="form" action="">
           <label>Введите ваше имя<sup>*</sup>
-            <input type="text" name="name" placeholder="Введите ваше имя" required>
+            <input type="text" name="name" minlength="2" placeholder="Ваше имя" required>
           </label>
           <label>Введите ваш номер телефона<sup>*</sup>
-            <input type="tel" name="name" placeholder="Введите ваше имя" required>
+            <input type="tel" name="tel" minlength="11" maxlength="11" placeholder="Ваше номер телефона" required>
           </label>
           <button class="button" type="submit" name="button" >Заказать звонок</button>
         </form>
@@ -430,16 +430,16 @@
         </div>
         <form class="form" action="">
           <label>Введите ваше имя<sup>*</sup>
-            <input type="text" name="name" placeholder="Введите ваше имя" required>
+            <input type="text" name="name" placeholder="Ваше имя" required>
           </label>
           <label>Введите вашу организацию<sup>*</sup>
-            <input type="text" name="name" placeholder="Введите ваше имя" required>
+            <input type="text" name="name" placeholder="Название организация" required>
           </label>
           <label>Введите ваш номер телефона<sup>*</sup>
-            <input type="tel" name="name" placeholder="Введите ваше имя" required>
+            <input type="tel" name="name" placeholder="Ваш номер телефона" required>
           </label>
-          <label>Введите ваш Email
-            <input type="email" name="name" placeholder="Введите ваше имя">
+          <label>Введите ваш Email<sup>*</sup>
+            <input type="email" name="name" placeholder="Ваш Email" required>
           </label>
           <button class="button" type="submit" name="button" >Заказать звонок</button>
         </form>
@@ -513,6 +513,7 @@
     <!-- JS -->
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript">
       ymaps.ready(init);

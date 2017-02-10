@@ -191,6 +191,10 @@ button {
   background-size: 39px 39px !important;
   height: 39px !important; }
 
+#name-error, #tel-error {
+  font-size: 0.8rem;
+  color: red; }
+
 /* 4. Header */
 .header-top {
   background-image: url(../img/bg/header-lg.jpg);

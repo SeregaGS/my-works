@@ -41,4 +41,37 @@ $(document).ready(function(){
        //анимируем переход на расстояние - top за 1500 мс
        $('body,html').animate({scrollTop: top+10}, 1500);
    });
+
+  $("#form-bottom").validate({
+    rules: {
+      name: "required",
+      tel: {
+        required: true,
+        minlength: 11
+      }
+    },
+    messages: {
+      name: "Пожалуйста, укажите Ваше имя",
+      tel: {
+        required: "Укажите номер телефона чтобы мы могли с вами связаться",
+        minlength: "Пример - 89179999999"
+      }
+    }
+  });
+  $("#forms-top-wrap").validate({
+    rules: {
+      name: "required",
+      tel: {
+        required: true,
+        minlength: 11
+      }
+    },
+    messages: {
+      name: "Пожалуйста, укажите Ваше имя",
+      tel: {
+        required: "Укажите номер телефона чтобы мы могли с вами связаться",
+        minlength: "Пример - 89179999999"
+      }
+    }
+  });
 });
