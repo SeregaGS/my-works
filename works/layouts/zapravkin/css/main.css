@@ -73,7 +73,7 @@ h3 {
 
 p {
   font-family: "OpenSans-Regular";
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0; }
 
@@ -456,6 +456,25 @@ button {
     display: inline-block;
     max-width: 62.5rem;
     width: 100%; }
+
+.prices {
+  display: block;
+  padding-top: 1rem;
+  text-align: right;
+  position: relative;
+  font-size: 1.2rem;
+  font-family: "OpenSans-ExtraBold"; }
+
+.prices-rub {
+  bottom: 2px;
+  right: -30px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-image: url(../img/russia-ruble.svg);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 /* 5.1 Item */
 .products-wrapp-item {
