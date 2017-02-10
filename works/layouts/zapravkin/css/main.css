@@ -191,6 +191,19 @@ button {
   background-size: 39px 39px !important;
   height: 39px !important; }
 
+.ymaps-2-1-47-inner-panes {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transition: -webkit-filter 1s ease;
+  transition: -webkit-filter 1s ease;
+  -o-transition: filter 1s ease;
+  -moz-transition: filter 1s ease;
+  transition: filter 1s ease;
+  transition: filter 1s ease, -webkit-filter 1s ease; }
+  .ymaps-2-1-47-inner-panes:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+
 #name-error, #tel-error {
   font-size: 0.8rem;
   color: red; }
