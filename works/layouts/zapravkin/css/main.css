@@ -662,7 +662,7 @@ button {
 /* 9. Contacts */
 .contacts-wrapp {
   position: relative;
-  height: 900px; }
+  height: 100vh; }
   .contacts-wrapp #map {
     position: absolute;
     top: 0;
