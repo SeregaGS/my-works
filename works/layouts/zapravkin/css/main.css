@@ -286,6 +286,27 @@ button {
   height: inherit;
   padding: 10rem 0 6rem 0; }
 
+.about-us-description-wrap {
+  padding-left: 0;
+  list-style-type: none; }
+  .about-us-description-wrap li {
+    padding-top: 0.2rem;
+    padding-left: 1.5rem;
+    position: relative; }
+    .about-us-description-wrap li::before {
+      content: "";
+      position: absolute;
+      width: 0.443rem;
+      left: 6px;
+      top: 12px;
+      height: 0.443rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
 /* 4.1 Burger */
 .burger-wrap {
   position: relative;
@@ -545,7 +566,8 @@ button {
   max-width: 100%; }
 
 .about-us-description p {
-  padding-bottom: 22px; }
+  padding-bottom: 22px;
+  font-size: 1rem; }
 
 /* 7. Partners*/
 .partners-wrapp {
@@ -576,6 +598,28 @@ button {
 .clients-carousel-item {
   padding: 0.5rem;
   text-align: center; }
+
+.partners-description-wrap-ul {
+  text-align: right;
+  padding-left: 0;
+  list-style-type: none; }
+  .partners-description-wrap-ul li {
+    padding-top: 0.2rem;
+    padding-right: 1.5rem;
+    position: relative; }
+    .partners-description-wrap-ul li::before {
+      content: "";
+      position: absolute;
+      width: 0.443rem;
+      right: 6px;
+      top: 12px;
+      height: 0.443rem;
+      background-color: #ffffff;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
 
 /* 8. Clients*/
 .clients-wrapp .section-title h2 {
