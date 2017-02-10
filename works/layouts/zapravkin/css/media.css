@@ -259,8 +259,10 @@
   .burger-wrap {
     width: 25px;
     left: 15px; }
-  .carousel-item-description p {
-    display: none; }
+  .carousel-item-description {
+    margin: 0 3rem; }
+    .carousel-item-description p {
+      display: none; }
   .hidden-carousel-button {
     display: block; }
   .menu-wrapp-overlay {
