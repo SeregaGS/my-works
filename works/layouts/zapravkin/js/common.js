@@ -51,9 +51,9 @@ $(document).ready(function(){
       }
     },
     messages: {
-      name: "Пожалуйста, укажите Ваше имя",
+      name: "Пожалуйста, укажите Ваше имя.",
       tel: {
-        required: "Укажите номер телефона чтобы мы могли с вами связаться",
+        required: "Пожалуйста, укажите Ваш номер телефона.",
         minlength: "Пример - 89179999999"
       }
     }
@@ -67,11 +67,39 @@ $(document).ready(function(){
       }
     },
     messages: {
-      name: "Пожалуйста, укажите Ваше имя",
+      name: "Пожалуйста, укажите Ваше имя.",
       tel: {
-        required: "Укажите номер телефона чтобы мы могли с вами связаться",
+        required: "Пожалуйста, укажите Ваш номер телефона.",
         minlength: "Пример - 89179999999"
       }
+    }
+  });
+  $("#partners-prices").validate({
+    rules: {
+      name: "required",
+      organization: {
+        required: true
+      },
+      tel: {
+        required: true,
+        minlength: 11
+      },
+      email: {
+        required: true
+      },
+    },
+    messages: {
+      name: "Пожалуйста, укажите Ваше имя.",
+      organization: {
+        required: "Пожалуйста, укажите Вашу организацию."
+      },
+      tel: {
+        required: "Пожалуйста, укажите Ваш номер телефона.",
+        minlength: "Пример - 89179999999"
+      },
+      email: {
+        required: "Пожалуйста, укажите Вашу электронную почту."
+      },
     }
   });
 });

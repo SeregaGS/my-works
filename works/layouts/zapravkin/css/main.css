@@ -204,7 +204,7 @@ button {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
 
-#name-error, #tel-error {
+#name-error, #tel-error, #organization-error, #email-error {
   font-size: 0.8rem;
   color: red; }
 
@@ -756,12 +756,38 @@ button {
 .form sup {
   color: red; }
 
-.col-form-contacts {
+.col-form-contacts, .col-form-contacts-left {
   float: right;
   width: 27%;
   display: inline-block;
   position: absolute;
   right: 5rem; }
+
+.col-form-contacts-left {
+  float: left;
+  left: 5rem;
+  background-color: #fff;
+  padding: 2rem; }
+
+.col-form-contacts-left-wrap {
+  list-style-type: none;
+  margin-bottom: 0; }
+
+.col-form-contacts-left-li {
+  font-family: "OpenSans-Bold";
+  line-height: 2rem;
+  position: relative; }
+  .col-form-contacts-left-li .fa-map-marker {
+    font-size: 1.5rem;
+    top: 5px; }
+  .col-form-contacts-left-li .fa-phone {
+    font-size: 1.3rem;
+    top: 7px; }
+  .col-form-contacts-left-li .fa-paper-plane {
+    top: 8px; }
+  .col-form-contacts-left-li .fa {
+    position: absolute;
+    left: -28px; }
 
 /* 10. Footer */
 .footer .section-product-pad {
