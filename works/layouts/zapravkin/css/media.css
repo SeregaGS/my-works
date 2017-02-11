@@ -151,7 +151,9 @@
   .col-form-contacts {
     width: 30%; }
   .form .button {
-    font-size: 0.65rem; } }
+    font-size: 0.65rem; }
+  .col-form-contacts-left {
+    width: 32%; } }
 
 @media screen and (max-width: 1024px) {
   .header-top {
@@ -224,7 +226,9 @@
   .legal-address {
     display: block;
     text-align: center;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .col-form-contacts-left {
+    display: none; } }
 
 @media screen and (max-width: 786px) {
   .products-wrapp-item {
