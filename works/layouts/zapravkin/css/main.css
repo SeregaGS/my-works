@@ -148,7 +148,7 @@ a {
 
 .owl-buttons {
   position: relative;
-  top: -22rem;
+  top: -19rem;
   max-width: 95.63rem;
   margin: 0 auto;
   height: 1.875rem; }
@@ -419,7 +419,8 @@ button {
 
 .carousel-item-img {
   margin-left: 7.5rem;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-top: 3.75rem; }
 
 .carousel-item-description {
   color: #ffffff;

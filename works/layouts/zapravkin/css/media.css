@@ -14,7 +14,8 @@
   .menu-wrapp-overlay {
     padding: 1.7rem; }
   .carousel-item-img {
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    width: 90%; }
   .carousel-item-description {
     margin-right: 4.5rem; }
     .carousel-item-description h1 {
@@ -24,10 +25,8 @@
       line-height: 1.4rem; }
   .logo-name {
     font-size: 1.4rem; }
-  .carousel-item-img {
-    width: 81%; }
   .owl-buttons {
-    top: -17rem; }
+    top: -19.5rem; }
   .owl-pagination .owl-page {
     width: 0.8rem;
     height: 0.8rem;
