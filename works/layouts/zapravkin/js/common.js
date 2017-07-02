@@ -7,7 +7,7 @@ $(document).ready(function(){
     itemsMobile : false,
     loop      : true,
     nav       : true,
-    // autoPlay  : 5000,
+    autoPlay  : 4500,
     navigation : true,
     navigationText : false
   });
